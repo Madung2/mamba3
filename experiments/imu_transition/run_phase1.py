@@ -26,6 +26,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--device", default=None, help="Override device from config.")
     parser.add_argument("--force-rebuild", action="store_true", help="Rebuild cached windows.")
+    parser.add_argument("--seeds", nargs="*", type=int, default=None, help="List of seeds; overrides config seed.")
+    parser.add_argument("--split-mode", default=None, choices=["random", "subject"], help="Override split mode.")
+    parser.add_argument("--window-size", type=int, default=None, help="Override window size.")
+    parser.add_argument("--stride", type=int, default=None, help="Override stride.")
+    parser.add_argument("--models", nargs="*", default=None, help="Subset of models to run.")
+    parser.add_argument("--channels", nargs="*", default=None, help="Subset of channel modes.")
+    parser.add_argument("--output-suffix", default=None, help="Append to output_root and CSV file names.")
+    parser.add_argument("--output-root", default=None, help="Override output_root entirely.")
     return parser.parse_args()
 
 
@@ -45,23 +53,57 @@ def main() -> None:
     config = load_config(args.config)
     if args.device is not None:
         config["device"] = args.device
+    if args.split_mode is not None:
+        config["split_mode"] = args.split_mode
+    if args.window_size is not None:
+        config["window_size"] = args.window_size
+    if args.stride is not None:
+        config["stride"] = args.stride
+    if args.models is not None:
+        config["models"] = args.models
+    if args.channels is not None:
+        config["channel_modes"] = args.channels
+    if args.output_root is not None:
+        config["output_root"] = args.output_root
+    if args.output_suffix:
+        config["output_root"] = str(Path(config["output_root"]) / args.output_suffix)
     config["force_rebuild"] = args.force_rebuild
 
-    results: list[dict[str, object]] = []
-    for model_name in config["models"]:
-        for channel_mode in config["channel_modes"]:
-            result = train_single_experiment(config=config, model_name=model_name, channel_mode=channel_mode)
-            results.append(flatten_results(result))
+    seeds = args.seeds if args.seeds else [config["seed"]]
 
     repo_root = ensure_repo_on_path()
     output_root = resolve_repo_path(config["output_root"], repo_root=repo_root)
     output_root.mkdir(parents=True, exist_ok=True)
+
+    results: list[dict[str, object]] = []
+    for seed in seeds:
+        for model_name in config["models"]:
+            for channel_mode in config["channel_modes"]:
+                cfg = dict(config)
+                cfg["seed"] = int(seed)
+                cfg["_run_subdir"] = f"seed{seed}_{model_name}_{channel_mode}"
+                # train_single_experiment uses build_run_name(model, channels) for the
+                # run_dir name, which would collide across seeds. We side-step by
+                # rerooting output_root per seed.
+                cfg["output_root"] = str(output_root / f"seed{seed}")
+                Path(cfg["output_root"]).mkdir(parents=True, exist_ok=True)
+                result = train_single_experiment(
+                    config=cfg, model_name=model_name, channel_mode=channel_mode
+                )
+                row = flatten_results(result)
+                row["seed"] = int(seed)
+                row.setdefault("split_mode", cfg.get("split_mode", "random"))
+                row.setdefault("window_size", cfg["window_size"])
+                row.setdefault("stride", cfg["stride"])
+                results.append(row)
+
     csv_path = output_root / "results_phase1.csv"
     json_path = output_root / "results_phase1.json"
 
     frame = pd.DataFrame(results)
     frame.to_csv(csv_path, index=False)
     json_path.write_text(json.dumps(results, indent=2), encoding="utf-8")
+    print(f"\n=== Sweep finished. Wrote {csv_path} ({len(results)} rows) ===")
     print(frame.to_string(index=False))
 
 

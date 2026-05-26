@@ -61,6 +61,7 @@ def build_dataloaders(config: dict, channel_mode: str, device: torch.device) -> 
         normalize=config.get("normalize", True),
         subset_fraction=config.get("subset_fraction", 1.0),
         force_rebuild=config.get("force_rebuild", False),
+        split_mode=config.get("split_mode", "random"),
     )
     loader_kwargs = {
         "batch_size": config["batch_size"],
@@ -217,6 +218,10 @@ def train_single_experiment(config: dict, model_name: str, channel_mode: str) ->
         "checkpoint_path": str(checkpoint_path),
         "split_sizes": splits.split_sizes,
         "best_val_metrics": checkpoint["best_val_metrics"],
+        "seed": int(config["seed"]),
+        "window_size": int(config["window_size"]),
+        "stride": int(config["stride"]),
+        "split_mode": str(config.get("split_mode", "random")),
         **test_metrics,
     }
 
@@ -228,6 +233,26 @@ def train_single_experiment(config: dict, model_name: str, channel_mode: str) ->
                 "y_pred_shape": int(y_pred.shape[0]),
             },
             indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    (run_dir / "test_predictions.json").write_text(
+        json.dumps(
+            {
+                "model": model_name,
+                "channels": channel_mode,
+                "seed": int(config["seed"]),
+                "window_size": int(config["window_size"]),
+                "stride": int(config["stride"]),
+                "split_mode": str(config.get("split_mode", "random")),
+                "y_true": y_true.astype(int).tolist(),
+                "y_pred": y_pred.astype(int).tolist(),
+                "test_exp_ids": splits.metadata["test_exp_ids"].astype(int).tolist(),
+                "test_user_ids": splits.metadata["test_user_ids"].astype(int).tolist(),
+                "test_window_starts": splits.metadata["test_window_starts"].astype(int).tolist(),
+                "test_activity_ids": splits.metadata["test_activity_ids"].astype(int).tolist(),
+            }
         ),
         encoding="utf-8",
     )

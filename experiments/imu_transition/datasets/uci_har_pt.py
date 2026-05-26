@@ -70,6 +70,10 @@ def _find_dataset_root(data_root: str | Path) -> Path:
 
 
 def _cache_path(dataset_root: Path, window_size: int, stride: int) -> Path:
+    import os
+    cache_dir = os.environ.get("HAPT_CACHE_DIR")
+    if cache_dir:
+        return Path(cache_dir).expanduser().resolve() / f"windows_{window_size}_{stride}.npz"
     return dataset_root.parent / f"windows_{window_size}_{stride}.npz"
 
 
@@ -190,6 +194,34 @@ def _normalize_splits(
     )
 
 
+def _subject_split_indices(
+    user_ids: np.ndarray,
+    train_ratio: float,
+    val_ratio: float,
+    seed: int,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Partition windows into train/val/test by user id (no user overlap)."""
+    unique_users = np.unique(user_ids)
+    rng = np.random.RandomState(seed)
+    shuffled = unique_users.copy()
+    rng.shuffle(shuffled)
+    n_users = len(shuffled)
+    if n_users < 3:
+        raise ValueError("subject split needs at least 3 distinct users.")
+    n_train = max(1, int(round(n_users * train_ratio)))
+    n_val = max(1, int(round(n_users * val_ratio)))
+    if n_train + n_val >= n_users:
+        n_train = max(1, n_users - 2)
+        n_val = 1
+    train_users = shuffled[:n_train]
+    val_users = shuffled[n_train:n_train + n_val]
+    test_users = shuffled[n_train + n_val:]
+    train_idx = np.where(np.isin(user_ids, train_users))[0]
+    val_idx = np.where(np.isin(user_ids, val_users))[0]
+    test_idx = np.where(np.isin(user_ids, test_users))[0]
+    return train_idx, val_idx, test_idx
+
+
 def create_dataset_splits(
     data_root: str | Path,
     window_size: int,
@@ -202,6 +234,7 @@ def create_dataset_splits(
     normalize: bool = True,
     subset_fraction: float = 1.0,
     force_rebuild: bool = False,
+    split_mode: str = "random",
 ) -> DatasetSplits:
     if not np.isclose(train_ratio + val_ratio + test_ratio, 1.0):
         raise ValueError("train_ratio + val_ratio + test_ratio must sum to 1.0.")
@@ -230,19 +263,29 @@ def create_dataset_splits(
     exp_ids = exp_ids[indices]
     window_starts = window_starts[indices]
 
-    train_idx, temp_idx = train_test_split(
-        np.arange(y.shape[0]),
-        train_size=train_ratio,
-        random_state=seed,
-        stratify=_stratify_or_none(y),
-    )
-    relative_test_ratio = test_ratio / (val_ratio + test_ratio)
-    val_idx, test_idx = train_test_split(
-        temp_idx,
-        test_size=relative_test_ratio,
-        random_state=seed,
-        stratify=_stratify_or_none(y[temp_idx]),
-    )
+    if split_mode == "subject":
+        train_idx, val_idx, test_idx = _subject_split_indices(
+            user_ids=user_ids,
+            train_ratio=train_ratio,
+            val_ratio=val_ratio,
+            seed=seed,
+        )
+    elif split_mode == "random":
+        train_idx, temp_idx = train_test_split(
+            np.arange(y.shape[0]),
+            train_size=train_ratio,
+            random_state=seed,
+            stratify=_stratify_or_none(y),
+        )
+        relative_test_ratio = test_ratio / (val_ratio + test_ratio)
+        val_idx, test_idx = train_test_split(
+            temp_idx,
+            test_size=relative_test_ratio,
+            random_state=seed,
+            stratify=_stratify_or_none(y[temp_idx]),
+        )
+    else:
+        raise ValueError(f"Unknown split_mode='{split_mode}'. Use 'random' or 'subject'.")
 
     x_train = x[train_idx]
     x_val = x[val_idx]

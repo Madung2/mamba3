@@ -1,0 +1,32 @@
+{
+  "model": "cnn",
+  "channels": "acc",
+  "params": 75906,
+  "inference_ms_per_window": 0.0017320884217042476,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/subject_5seed/seed13/cnn_acc/best.pt",
+  "split_sizes": {
+    "train": 7651,
+    "val": 1477,
+    "test": 1801
+  },
+  "best_val_metrics": {
+    "accuracy": 0.987813134732566,
+    "macro_f1": 0.9450384519970231,
+    "transition_precision": 0.8125,
+    "transition_recall": 1.0,
+    "transition_f1": 0.896551724137931,
+    "loss": 0.03476067177620928
+  },
+  "seed": 13,
+  "window_size": 128,
+  "stride": 64,
+  "split_mode": "subject",
+  "accuracy": 0.9905607995558023,
+  "macro_f1": 0.947814985827534,
+  "transition_precision": 0.927710843373494,
+  "transition_recall": 0.875,
+  "transition_f1": 0.9005847953216374,
+  "loss": 0.10579490655185042,
+  "y_true_shape": 1801,
+  "y_pred_shape": 1801
+}

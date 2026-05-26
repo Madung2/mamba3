@@ -1,0 +1,32 @@
+{
+  "model": "gru",
+  "channels": "gyro",
+  "params": 38466,
+  "inference_ms_per_window": 0.0025016997096827254,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/subject_5seed/seed211/gru_gyro/best.pt",
+  "split_sizes": {
+    "train": 7782,
+    "val": 1395,
+    "test": 1752
+  },
+  "best_val_metrics": {
+    "accuracy": 0.9978494623655914,
+    "macro_f1": 0.9878083951653076,
+    "transition_precision": 0.984375,
+    "transition_recall": 0.9692307692307692,
+    "transition_f1": 0.9767441860465116,
+    "loss": 0.06971245521319008
+  },
+  "seed": 211,
+  "window_size": 128,
+  "stride": 64,
+  "split_mode": "subject",
+  "accuracy": 0.9937214611872146,
+  "macro_f1": 0.9676196076784139,
+  "transition_precision": 0.8936170212765957,
+  "transition_recall": 0.9882352941176471,
+  "transition_f1": 0.9385474860335196,
+  "loss": 0.03706781927615268,
+  "y_true_shape": 1752,
+  "y_pred_shape": 1752
+}

@@ -324,6 +324,37 @@ train subjects ≠ test subjects
 | Mamba-3-based SSM | - | - | - | - | - | - | - |
 ```
 
+### 10.1 현재 구현 기준 파라미터 수
+
+현재 1차 실험 코드(`experiments/imu_transition/`) 기준 모델 크기는 다음과 같다.  
+이 값들은 pretrained language model 크기(예: 130M, 1.3B, 2.8B)가 아니라, IMU binary transition detection용 소형 분류기 기준이다.
+
+#### 입력 채널 3개 (`acc only` 또는 `gyro only`)
+
+| Model | Params | Approx. |
+|---|---:|---:|
+| 1D-CNN | 75,906 | 0.0759M |
+| GRU | 38,466 | 0.0385M |
+| TCN | 220,610 | 0.2206M |
+| Transformer Encoder | 83,842 | 0.0838M |
+| Mamba-3-based SSM | 239,378 | 0.2394M |
+
+#### 입력 채널 6개 (`acc + gyro`)
+
+| Model | Params | Approx. |
+|---|---:|---:|
+| 1D-CNN | 76,866 | 0.0769M |
+| GRU | 39,042 | 0.0390M |
+| TCN | 221,378 | 0.2214M |
+| Transformer Encoder | 84,034 | 0.0840M |
+| Mamba-3-based SSM | 239,762 | 0.2398M |
+
+#### 메모
+
+- `acc only`와 `gyro only`는 모두 입력 채널 수가 3개이므로 파라미터 수가 동일하다.
+- 현재 구현 기준에서는 대략 `GRU < CNN < Transformer < TCN < Mamba-3` 순으로 모델 크기가 증가한다.
+- 따라서 본 실험의 baseline과 제안 모델은 모두 sub-million 규모의 소형 네트워크이며, B-scale language model과 직접 비교하는 설정은 아니다.
+
 ---
 
 ## 11. 기대되는 결과 해석 방향

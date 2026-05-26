@@ -1,0 +1,32 @@
+{
+  "model": "transformer",
+  "channels": "acc",
+  "params": 83842,
+  "inference_ms_per_window": 0.0037443879773491062,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/main_5seed/seed13/transformer_acc/best.pt",
+  "split_sizes": {
+    "train": 7650,
+    "val": 1639,
+    "test": 1640
+  },
+  "best_val_metrics": {
+    "accuracy": 0.99633923123856,
+    "macro_f1": 0.9798083082836446,
+    "transition_precision": 0.9493670886075949,
+    "transition_recall": 0.974025974025974,
+    "transition_f1": 0.9615384615384616,
+    "loss": 0.08773713437652828
+  },
+  "seed": 13,
+  "window_size": 128,
+  "stride": 64,
+  "split_mode": "random",
+  "accuracy": 0.9939024390243902,
+  "macro_f1": 0.96593297936868,
+  "transition_precision": 0.9473684210526315,
+  "transition_recall": 0.9230769230769231,
+  "transition_f1": 0.935064935064935,
+  "loss": 0.2055537164994947,
+  "y_true_shape": 1640,
+  "y_pred_shape": 1640
+}

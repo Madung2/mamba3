@@ -1,0 +1,28 @@
+{
+  "model": "tcn",
+  "channels": "acc",
+  "params": 220610,
+  "inference_ms_per_window": 0.005758912811870687,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/tcn_acc/best.pt",
+  "split_sizes": {
+    "train": 7650,
+    "val": 1639,
+    "test": 1640
+  },
+  "best_val_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "transition_precision": 1.0,
+    "transition_recall": 1.0,
+    "transition_f1": 1.0,
+    "loss": 0.009055147951558606
+  },
+  "accuracy": 0.9963414634146341,
+  "macro_f1": 0.9795597876212079,
+  "transition_precision": 0.9736842105263158,
+  "transition_recall": 0.9487179487179487,
+  "transition_f1": 0.961038961038961,
+  "loss": 0.09571869203525528,
+  "y_true_shape": 1640,
+  "y_pred_shape": 1640
+}

@@ -1,0 +1,16 @@
+model,channels,seed,window_size,split_mode,n_segments_in_test,n_detected,n_missed,miss_rate,latency_ms_mean,latency_ms_median,latency_ms_p25,latency_ms_p75,prediction_path
+cnn,acc_gyro,13,64,random,180,176,4,0.022222222222222223,2170.909090909091,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed13/cnn_acc_gyro/test_predictions.json
+gru,acc_gyro,13,64,random,180,176,4,0.022222222222222223,2200.0,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed13/gru_acc_gyro/test_predictions.json
+mamba3,acc_gyro,13,64,random,180,175,5,0.027777777777777776,2176.0,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed13/mamba3_acc_gyro/test_predictions.json
+tcn,acc_gyro,13,64,random,180,175,5,0.027777777777777776,2172.342857142857,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed13/tcn_acc_gyro/test_predictions.json
+transformer,acc_gyro,13,64,random,180,171,9,0.05,2200.7017543859647,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed13/transformer_acc_gyro/test_predictions.json
+cnn,acc_gyro,42,64,random,176,174,2,0.011363636363636364,2236.32183908046,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed42/cnn_acc_gyro/test_predictions.json
+gru,acc_gyro,42,64,random,176,167,9,0.05113636363636364,2234.251497005988,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed42/gru_acc_gyro/test_predictions.json
+mamba3,acc_gyro,42,64,random,176,174,2,0.011363636363636364,2291.4942528735633,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed42/mamba3_acc_gyro/test_predictions.json
+tcn,acc_gyro,42,64,random,176,170,6,0.03409090909090909,2277.6470588235293,1920.0,1280.0,2560.0,outputs_user/imu_transition/window_64_3seed/seed42/tcn_acc_gyro/test_predictions.json
+transformer,acc_gyro,42,64,random,176,170,6,0.03409090909090909,2296.470588235294,1920.0,1280.0,3040.0,outputs_user/imu_transition/window_64_3seed/seed42/transformer_acc_gyro/test_predictions.json
+cnn,acc_gyro,73,64,random,184,182,2,0.010869565217391304,2334.945054945055,1920.0,1280.0,3200.0,outputs_user/imu_transition/window_64_3seed/seed73/cnn_acc_gyro/test_predictions.json
+gru,acc_gyro,73,64,random,184,180,4,0.021739130434782608,2332.4444444444443,1920.0,1280.0,3200.0,outputs_user/imu_transition/window_64_3seed/seed73/gru_acc_gyro/test_predictions.json
+mamba3,acc_gyro,73,64,random,184,182,2,0.010869565217391304,2310.3296703296705,1920.0,1280.0,3200.0,outputs_user/imu_transition/window_64_3seed/seed73/mamba3_acc_gyro/test_predictions.json
+tcn,acc_gyro,73,64,random,184,181,3,0.016304347826086956,2312.486187845304,1920.0,1280.0,3200.0,outputs_user/imu_transition/window_64_3seed/seed73/tcn_acc_gyro/test_predictions.json
+transformer,acc_gyro,73,64,random,184,176,8,0.043478260869565216,2305.4545454545455,1920.0,1280.0,3200.0,outputs_user/imu_transition/window_64_3seed/seed73/transformer_acc_gyro/test_predictions.json

@@ -1,0 +1,32 @@
+{
+  "model": "mamba3",
+  "channels": "acc_gyro",
+  "params": 239762,
+  "inference_ms_per_window": 0.011325483901600819,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/window_128_3seed/seed13/mamba3_acc_gyro/best.pt",
+  "split_sizes": {
+    "train": 7650,
+    "val": 1639,
+    "test": 1640
+  },
+  "best_val_metrics": {
+    "accuracy": 0.9969493593654668,
+    "macro_f1": 0.9832754078086192,
+    "transition_precision": 0.95,
+    "transition_recall": 0.987012987012987,
+    "transition_f1": 0.9681528662420382,
+    "loss": 0.05644357268305869
+  },
+  "seed": 13,
+  "window_size": 128,
+  "stride": 64,
+  "split_mode": "random",
+  "accuracy": 0.9945121951219512,
+  "macro_f1": 0.9706069193223661,
+  "transition_precision": 0.9156626506024096,
+  "transition_recall": 0.9743589743589743,
+  "transition_f1": 0.9440993788819876,
+  "loss": 0.030114956777656406,
+  "y_true_shape": 1640,
+  "y_pred_shape": 1640
+}

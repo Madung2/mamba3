@@ -1,0 +1,32 @@
+{
+  "model": "tcn",
+  "channels": "acc_gyro",
+  "params": 221378,
+  "inference_ms_per_window": 0.0073272179724881425,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/window_256_3seed/seed42/tcn_acc_gyro/best.pt",
+  "split_sizes": {
+    "train": 3219,
+    "val": 690,
+    "test": 690
+  },
+  "best_val_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "transition_precision": 1.0,
+    "transition_recall": 1.0,
+    "transition_f1": 1.0,
+    "loss": 0.00334229975182941
+  },
+  "seed": 42,
+  "window_size": 256,
+  "stride": 128,
+  "split_mode": "random",
+  "accuracy": 0.9985507246376811,
+  "macro_f1": 0.9663003663003663,
+  "transition_precision": 0.875,
+  "transition_recall": 1.0,
+  "transition_f1": 0.9333333333333333,
+  "loss": 0.013051277366669282,
+  "y_true_shape": 690,
+  "y_pred_shape": 690
+}
