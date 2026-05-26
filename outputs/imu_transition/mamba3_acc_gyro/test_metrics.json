@@ -1,0 +1,28 @@
+{
+  "model": "mamba3",
+  "channels": "acc_gyro",
+  "params": 239762,
+  "inference_ms_per_window": 0.012874497624579817,
+  "checkpoint_path": "/workspace/mamba3/outputs/imu_transition/mamba3_acc_gyro/best.pt",
+  "split_sizes": {
+    "train": 382,
+    "val": 82,
+    "test": 82
+  },
+  "best_val_metrics": {
+    "accuracy": 0.926829268292683,
+    "macro_f1": 0.6057692307692308,
+    "transition_precision": 0.25,
+    "transition_recall": 0.25,
+    "transition_f1": 0.25,
+    "loss": 0.6681032551497947
+  },
+  "accuracy": 0.9146341463414634,
+  "macro_f1": 0.707590422822211,
+  "transition_precision": 0.3333333333333333,
+  "transition_recall": 0.75,
+  "transition_f1": 0.46153846153846156,
+  "loss": 0.4403376512047721,
+  "y_true_shape": 82,
+  "y_pred_shape": 82
+}

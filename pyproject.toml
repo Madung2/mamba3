@@ -37,6 +37,12 @@ causal-conv1d = [
 dev = [
     "pytest"
 ]
+experiments = [
+    "scikit-learn",
+    "pandas",
+    "tqdm",
+    "pyyaml",
+]
 
 
 [build-system]
