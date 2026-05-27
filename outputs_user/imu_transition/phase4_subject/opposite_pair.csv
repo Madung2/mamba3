@@ -1,0 +1,8 @@
+,,stand-to-sit vs sit-to-stand → opp%,stand-to-sit vs sit-to-stand → opp%,sit-to-lie vs lie-to-sit → opp%,sit-to-lie vs lie-to-sit → opp%,stand-to-lie vs lie-to-stand → opp%,stand-to-lie vs lie-to-stand → opp%
+,,mean,std,mean,std,mean,std
+backbone,head,,,,,,
+mamba3,avgpool,0.0,0.0,0.011111111111111112,0.019245008972987525,0.0,0.0
+mamba3,gyrophase_rd,0.0,0.0,0.0,0.0,0.0,0.0
+tcn,avgpool,0.0,0.0,0.0,0.0,0.013888888888888888,0.024056261216234408
+transformer,avgpool,0.0,0.0,0.0,0.0,0.021739130434782608,0.03765327842541037
+transformer,gyrophase_rd,0.0,0.0,0.011111111111111112,0.019245008972987525,0.007246376811594203,0.012551092808470124

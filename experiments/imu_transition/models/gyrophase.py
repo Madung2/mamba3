@@ -93,6 +93,10 @@ class HeadConfig:
     use_interactions: bool = False              # p*q, p*d, q*d, p*q*d, etc.
     rd_kind: str = "std"                        # "std" or "bin"
     pooling: tuple[str, ...] = ("mean", "max", "std")
+    # Which state-dict key to map to `selective_score`. Defaults to legacy
+    # rho-based proxy ("selective_score"). exp_plan4 §1 adds
+    # {"update_budget", "forget_rate", "phase_velocity"}.
+    selective_proxy: str = "selective_score"
 
 
 def _pool_timeseries(x: torch.Tensor, kinds: tuple[str, ...]) -> list[torch.Tensor]:
@@ -269,6 +273,25 @@ def head_config_for(name: str) -> HeadConfig:
             use_rotation_diversity=True,
             use_selective_score=True,
             use_interactions=True,
+        ),
+        # exp_plan4 §1 — Selective GyroPhase v2 / v3 with improved proxies
+        "selective_gyrophase_v2": HeadConfig(
+            use_hidden_magnitude=True,
+            use_hidden_phase=True,
+            use_gyro_magnitude=True,
+            use_rotation_diversity=True,
+            use_selective_score=True,
+            use_interactions=True,
+            selective_proxy="update_budget",
+        ),
+        "selective_gyrophase_v3": HeadConfig(
+            use_hidden_magnitude=True,
+            use_hidden_phase=True,
+            use_gyro_magnitude=True,
+            use_rotation_diversity=True,
+            use_selective_score=True,
+            use_interactions=True,
+            selective_proxy="phase_velocity",
         ),
     }
     if name not in presets:

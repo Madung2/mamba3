@@ -1,0 +1,167 @@
+
+=== seed=13  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9844530816213215,
+  "macro_f1": 0.7928810731049447,
+  "direction_macro_f1": 0.7586048454469506,
+  "transition_f1": 0.9723756906077348
+}
+
+=== seed=13  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.9816768461965575,
+  "macro_f1": 0.7597710382538329,
+  "direction_macro_f1": 0.7202681577681577,
+  "transition_f1": 0.9378531073446328
+}
+
+=== seed=13  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9877845641310383,
+  "macro_f1": 0.830458024605097,
+  "direction_macro_f1": 0.8025414625158871,
+  "transition_f1": 0.96
+}
+
+=== seed=13  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9894503053858967,
+  "macro_f1": 0.8538920617506494,
+  "direction_macro_f1": 0.829832965477063,
+  "transition_f1": 0.9666666666666667
+}
+
+=== seed=13  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.9833425874514159,
+  "macro_f1": 0.7553362455140915,
+  "direction_macro_f1": 0.7148508386806259,
+  "transition_f1": 0.9659090909090909
+}
+
+=== seed=42  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9816023738872404,
+  "macro_f1": 0.7624081516664637,
+  "direction_macro_f1": 0.7235395895432899,
+  "transition_f1": 0.9195402298850575
+}
+
+=== seed=42  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.9845697329376855,
+  "macro_f1": 0.7997299100725547,
+  "direction_macro_f1": 0.7668195804720627,
+  "transition_f1": 0.9454545454545454
+}
+
+=== seed=42  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9881305637982196,
+  "macro_f1": 0.8532024053499457,
+  "direction_macro_f1": 0.8289963123296458,
+  "transition_f1": 0.9700598802395209
+}
+
+=== seed=42  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9821958456973294,
+  "macro_f1": 0.7801225071732713,
+  "direction_macro_f1": 0.7442063376345653,
+  "transition_f1": 0.9195402298850575
+}
+
+=== seed=42  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.9821958456973294,
+  "macro_f1": 0.7659613889325101,
+  "direction_macro_f1": 0.727527691440735,
+  "transition_f1": 0.9349112426035503
+}
+
+=== seed=73  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9849624060150376,
+  "macro_f1": 0.8015343686640808,
+  "direction_macro_f1": 0.7688813317969329,
+  "transition_f1": 0.9528795811518325
+}
+
+=== seed=73  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.9817400644468314,
+  "macro_f1": 0.7755880877337379,
+  "direction_macro_f1": 0.7387526745939877,
+  "transition_f1": 0.9381443298969072
+}
+
+=== seed=73  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9806659505907627,
+  "macro_f1": 0.7656436494779061,
+  "direction_macro_f1": 0.7271031746031746,
+  "transition_f1": 0.9424083769633508
+}
+
+=== seed=73  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9833512352309345,
+  "macro_f1": 0.7749128046948842,
+  "direction_macro_f1": 0.7379635632689608,
+  "transition_f1": 0.9354838709677419
+}
+
+=== seed=73  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.981203007518797,
+  "macro_f1": 0.7441826311784067,
+  "direction_macro_f1": 0.7019709713969796,
+  "transition_f1": 0.9528795811518325
+}
+
+Wrote /home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/phase4_subject/results_phase3.csv (15 rows)

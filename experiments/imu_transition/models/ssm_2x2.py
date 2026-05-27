@@ -170,17 +170,23 @@ class _ComplexSSMBase(nn.Module):
         H_real = torch.stack(reals, dim=1)
         H_imag = torch.stack(imags, dim=1)
         if self.expose_hidden:
-            # selective_score: average data-dependent update strength along the
-            # state axis. For static blocks this collapses to a scalar so the
-            # proxy becomes mostly constant — exactly what we want to surface.
             mag = (u_real ** 2 + u_imag ** 2).sqrt()                 # (B, T, d_state)
+            forget = 1.0 - rho
+            update_budget = forget * mag
+            # phase velocity ≈ rho * |sin(theta)| as a proxy for the actual
+            # per-step rotation angle applied to the previous state.
+            phase_velocity = rho * torch.abs(torch.sin(theta))
             self._last_state = {
                 "h_real": H_real.detach(),
                 "h_imag": H_imag.detach(),
-                "selective_score": rho.detach(),
+                "selective_score": rho.detach(),         # legacy proxy
                 "update_strength": mag.detach(),
                 "retention": rho.detach(),
                 "phase_step": theta.detach(),
+                # exp_plan4 §1 — new proxies
+                "forget_rate": forget.detach(),
+                "update_budget": update_budget.detach(),
+                "phase_velocity": phase_velocity.detach(),
             }
         h = torch.cat([H_real, H_imag], dim=-1)
         y = self.out_proj(h)

@@ -1,0 +1,68 @@
+
+=== seed=13  backbone=complex_selective  head=selective_gyrophase_v2  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v2",
+  "params": 51254,
+  "accuracy": 0.9774390243902439,
+  "macro_f1": 0.7504337048557173,
+  "direction_macro_f1": 0.7097500691440564,
+  "transition_f1": 0.8994082840236687
+}
+
+=== seed=13  backbone=complex_selective  head=selective_gyrophase_v3  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v3",
+  "params": 51254,
+  "accuracy": 0.9640243902439024,
+  "macro_f1": 0.6597610554864441,
+  "direction_macro_f1": 0.605213459380126,
+  "transition_f1": 0.7916666666666666
+}
+
+=== seed=42  backbone=complex_selective  head=selective_gyrophase_v2  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v2",
+  "params": 51254,
+  "accuracy": 0.9689024390243902,
+  "macro_f1": 0.7010186947379932,
+  "direction_macro_f1": 0.6528567583266041,
+  "transition_f1": 0.8306010928961749
+}
+
+=== seed=42  backbone=complex_selective  head=selective_gyrophase_v3  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v3",
+  "params": 51254,
+  "accuracy": 0.9560975609756097,
+  "macro_f1": 0.6029118392224925,
+  "direction_macro_f1": 0.5394361067985357,
+  "transition_f1": 0.75
+}
+
+=== seed=73  backbone=complex_selective  head=selective_gyrophase_v2  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v2",
+  "params": 51254,
+  "accuracy": 0.9652439024390244,
+  "macro_f1": 0.6101109949314454,
+  "direction_macro_f1": 0.5469574510759335,
+  "transition_f1": 0.8111111111111111
+}
+
+=== seed=73  backbone=complex_selective  head=selective_gyrophase_v3  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase_v3",
+  "params": 51254,
+  "accuracy": 0.9164634146341464,
+  "macro_f1": 0.5911445383374314,
+  "direction_macro_f1": 0.5292361001998048,
+  "transition_f1": 0.5637065637065637
+}
+
+Wrote /home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/phase4_proxy/results_phase3.csv (6 rows)

@@ -1,0 +1,5 @@
+,,stand-to-sit vs sit-to-stand → opp%,stand-to-sit vs sit-to-stand → opp%,sit-to-lie vs lie-to-sit → opp%,sit-to-lie vs lie-to-sit → opp%,stand-to-lie vs lie-to-stand → opp%,stand-to-lie vs lie-to-stand → opp%
+,,mean,std,mean,std,mean,std
+backbone,head,,,,,,
+complex_selective,selective_gyrophase_v2,0.016666666666666666,0.02886751345948129,0.0,0.0,0.0,0.0
+complex_selective,selective_gyrophase_v3,0.09999999999999999,0.17320508075688773,0.012820512820512822,0.022205779584216375,0.0,0.0

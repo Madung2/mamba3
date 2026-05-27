@@ -1,0 +1,3 @@
+backbone,head,seed,gyro_high_dirF1,gyro_low_dirF1,rd_high_dirF1,rd_low_dirF1,gyro_high_rd_high_dirF1
+complex_selective,selective_gyrophase_v2,42.666666666666664,0.6599380613402624,0.0,0.6625703604789136,0.0,0.6625703604789136
+complex_selective,selective_gyrophase_v3,42.666666666666664,0.6015041889009701,0.0,0.6012583244930355,0.0,0.6027183424624872

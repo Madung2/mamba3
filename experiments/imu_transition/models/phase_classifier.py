@@ -85,7 +85,9 @@ class PhaseAwareClassifier(nn.Module):
 
         h_real = state.get("h_real")
         h_imag = state.get("h_imag")
-        sel = state.get("selective_score")
+        sel = state.get(cfg.selective_proxy)
+        if sel is None:
+            sel = state.get("selective_score")
 
         if cfg.use_hidden_magnitude and h_real is not None and h_imag is not None:
             mag = (h_real ** 2 + h_imag ** 2).sqrt()                # (B, T, d_state)

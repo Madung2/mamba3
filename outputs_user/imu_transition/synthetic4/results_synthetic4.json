@@ -1,0 +1,3002 @@
+[
+  {
+    "backbone": "cnn",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 75586,
+    "inference_ms_per_window": 0.001251661524293013,
+    "train_time_s": 2.411724711069837,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.002536306359805167,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 75586,
+    "inference_ms_per_window": 0.0012517788945842767,
+    "train_time_s": 2.1977702849544585,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.005012557692825794,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 75586,
+    "inference_ms_per_window": 0.001251534376933705,
+    "train_time_s": 2.113337184069678,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.005317317755892873,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 220354,
+    "inference_ms_per_window": 0.003636928704509046,
+    "train_time_s": 2.69318843097426,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.006134320646524429,
+    "accuracy": 0.999,
+    "macro_f1": 0.9989992153848617,
+    "worst_class_f1": 0.9989711934156379,
+    "per_class_f1": [
+      0.9990272373540856,
+      0.9989711934156379
+    ],
+    "confusion_matrix": [
+      [
+        1027,
+        1
+      ],
+      [
+        1,
+        971
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 220354,
+    "inference_ms_per_window": 0.003638119960669428,
+    "train_time_s": 2.9552188660018146,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0012429766478016973,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 220354,
+    "inference_ms_per_window": 0.0036351839753479,
+    "train_time_s": 2.9552000069525093,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0006572386547923088,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 83778,
+    "inference_ms_per_window": 0.0028251031380932545,
+    "train_time_s": 3.065587318968028,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.001174781926907599,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 83778,
+    "inference_ms_per_window": 0.002824392959155375,
+    "train_time_s": 3.0624032099731266,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0012087895683944225,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 83778,
+    "inference_ms_per_window": 0.0028224759716977132,
+    "train_time_s": 3.10418117698282,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.002499470327049494,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 239250,
+    "inference_ms_per_window": 0.0057268677664978895,
+    "train_time_s": 25.021495670080185,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.00019578043988440185,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 239250,
+    "inference_ms_per_window": 0.0058151605571765685,
+    "train_time_s": 3.822786885080859,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.000286595854209736,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 239250,
+    "inference_ms_per_window": 0.005727677717004553,
+    "train_time_s": 3.811060336884111,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.00018067917390726508,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 25794,
+    "inference_ms_per_window": 0.02414906721242005,
+    "train_time_s": 13.426764979027212,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0021389708174392582,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 25794,
+    "inference_ms_per_window": 0.024054599225564743,
+    "train_time_s": 15.25315513391979,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0003992538205347955,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 25794,
+    "inference_ms_per_window": 0.02410448655609798,
+    "train_time_s": 11.984317963942885,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.004821460166946054,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 33986,
+    "inference_ms_per_window": 0.02395862520643277,
+    "train_time_s": 11.806282952893525,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.003883826463483274,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 33986,
+    "inference_ms_per_window": 0.024048913110163994,
+    "train_time_s": 11.720793758053333,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0038016874566674233,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 33986,
+    "inference_ms_per_window": 0.024264064040835365,
+    "train_time_s": 11.878470306983218,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0013186764204874634,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 34114,
+    "inference_ms_per_window": 0.07586102615277923,
+    "train_time_s": 43.284840205917135,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0012305176453664898,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 34114,
+    "inference_ms_per_window": 0.07583724632240774,
+    "train_time_s": 43.1322282878682,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0014846023190766573,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 34114,
+    "inference_ms_per_window": 0.07651560022168269,
+    "train_time_s": 47.73439745977521,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0015278365053236485,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "direction_hard",
+    "seed": 13,
+    "params": 50498,
+    "inference_ms_per_window": 0.0752202109197242,
+    "train_time_s": 34.90650161891244,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0008623122260905802,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "direction_hard",
+    "seed": 42,
+    "params": 50498,
+    "inference_ms_per_window": 0.07542793086940947,
+    "train_time_s": 34.90462790685706,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.00038365583308041097,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1012,
+        0
+      ],
+      [
+        0,
+        988
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "direction_hard",
+    "seed": 73,
+    "params": 50498,
+    "inference_ms_per_window": 0.07518371485275566,
+    "train_time_s": 34.589050262002274,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0012896726746112108,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1045,
+        0
+      ],
+      [
+        0,
+        955
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 75586,
+    "inference_ms_per_window": 0.00125221913549467,
+    "train_time_s": 6.690817525144666,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.009140693791210651,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994999898747949,
+    "worst_class_f1": 0.9994977398292315,
+    "per_class_f1": [
+      0.9994977398292315,
+      0.9995022399203584
+    ],
+    "confusion_matrix": [
+      [
+        995,
+        1
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 75586,
+    "inference_ms_per_window": 0.0012515870821516728,
+    "train_time_s": 8.622036379994825,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.009380160331726074,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1039,
+        0
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 75586,
+    "inference_ms_per_window": 0.0012512390640040394,
+    "train_time_s": 9.182573942001909,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.004443975197151303,
+    "accuracy": 0.999,
+    "macro_f1": 0.9989992704681714,
+    "worst_class_f1": 0.998972250770812,
+    "per_class_f1": [
+      0.9990262901655307,
+      0.998972250770812
+    ],
+    "confusion_matrix": [
+      [
+        1026,
+        2
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 220354,
+    "inference_ms_per_window": 0.003644831258498016,
+    "train_time_s": 3.0188925620168447,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0013317675422877073,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        996,
+        0
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 220354,
+    "inference_ms_per_window": 0.003636353721958585,
+    "train_time_s": 2.7564860018901527,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.012189666338264942,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994992577748367,
+    "worst_class_f1": 0.999479979199168,
+    "per_class_f1": [
+      0.9995185363505056,
+      0.999479979199168
+    ],
+    "confusion_matrix": [
+      [
+        1038,
+        1
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 220354,
+    "inference_ms_per_window": 0.003635639632193488,
+    "train_time_s": 2.7417406430467963,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.008376462139189243,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 83778,
+    "inference_ms_per_window": 0.002818857228703564,
+    "train_time_s": 4.252341157058254,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.001008779720403254,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        996,
+        0
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 83778,
+    "inference_ms_per_window": 0.002820177724061068,
+    "train_time_s": 3.507072143955156,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.028112417086958885,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1039,
+        0
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 83778,
+    "inference_ms_per_window": 0.0028200056476634927,
+    "train_time_s": 3.8292788879480213,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0036465302165597678,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 239250,
+    "inference_ms_per_window": 0.005862456055183429,
+    "train_time_s": 4.286443486111239,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.003249099224805832,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        996,
+        0
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 239250,
+    "inference_ms_per_window": 0.005767428683611797,
+    "train_time_s": 3.881648479960859,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.010406128264963626,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1039,
+        0
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 239250,
+    "inference_ms_per_window": 0.005804439433632069,
+    "train_time_s": 3.8459547839593142,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.004996430099010468,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 25794,
+    "inference_ms_per_window": 0.024244028099928983,
+    "train_time_s": 35.301510717952624,
+    "best_val_macro_f1": 0.9994999938749249,
+    "loss": 0.002029814375564456,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994999938749249,
+    "worst_class_f1": 0.9994982438534872,
+    "per_class_f1": [
+      0.9994982438534872,
+      0.9995017438963627
+    ],
+    "confusion_matrix": [
+      [
+        996,
+        0
+      ],
+      [
+        1,
+        1003
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 25794,
+    "inference_ms_per_window": 0.024182285142160254,
+    "train_time_s": 30.085007140180096,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.003205914780497551,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994992577748367,
+    "worst_class_f1": 0.999479979199168,
+    "per_class_f1": [
+      0.9995185363505056,
+      0.999479979199168
+    ],
+    "confusion_matrix": [
+      [
+        1038,
+        1
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 25794,
+    "inference_ms_per_window": 0.023925563846205478,
+    "train_time_s": 37.08028876106255,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0015585500751622021,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 33986,
+    "inference_ms_per_window": 0.024009222443055478,
+    "train_time_s": 22.07649205508642,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0015614523962140083,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        996,
+        0
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 33986,
+    "inference_ms_per_window": 0.02398316387370869,
+    "train_time_s": 16.948092697188258,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.009739238359034062,
+    "accuracy": 0.9985,
+    "macro_f1": 0.9984976559677237,
+    "worst_class_f1": 0.9984383133784487,
+    "per_class_f1": [
+      0.9985569985569985,
+      0.9984383133784487
+    ],
+    "confusion_matrix": [
+      [
+        1038,
+        1
+      ],
+      [
+        2,
+        959
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 33986,
+    "inference_ms_per_window": 0.02398589253971295,
+    "train_time_s": 18.8750433169771,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.014667469531297684,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994995935448567,
+    "worst_class_f1": 0.9994853319608852,
+    "per_class_f1": [
+      0.9995138551288284,
+      0.9994853319608852
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        1,
+        971
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 34114,
+    "inference_ms_per_window": 0.076015539252694,
+    "train_time_s": 55.90321123809554,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.011385389611124992,
+    "accuracy": 0.999,
+    "macro_f1": 0.998999974999375,
+    "worst_class_f1": 0.9989949748743718,
+    "per_class_f1": [
+      0.9989949748743718,
+      0.9990049751243781
+    ],
+    "confusion_matrix": [
+      [
+        994,
+        2
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 34114,
+    "inference_ms_per_window": 0.07569446365778276,
+    "train_time_s": 55.71981884702109,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.004221353374421597,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994992577748367,
+    "worst_class_f1": 0.999479979199168,
+    "per_class_f1": [
+      0.9995185363505056,
+      0.999479979199168
+    ],
+    "confusion_matrix": [
+      [
+        1038,
+        1
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 34114,
+    "inference_ms_per_window": 0.07648133573638916,
+    "train_time_s": 56.05885393591598,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.0052418623454868795,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "worst_class_f1": 1.0,
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        1028,
+        0
+      ],
+      [
+        0,
+        972
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "mid_switch",
+    "seed": 13,
+    "params": 50498,
+    "inference_ms_per_window": 0.07529809727202519,
+    "train_time_s": 112.40579253481701,
+    "best_val_macro_f1": 1.0,
+    "loss": 0.002806658864021301,
+    "accuracy": 0.9995,
+    "macro_f1": 0.9994999898747949,
+    "worst_class_f1": 0.9994977398292315,
+    "per_class_f1": [
+      0.9994977398292315,
+      0.9995022399203584
+    ],
+    "confusion_matrix": [
+      [
+        995,
+        1
+      ],
+      [
+        0,
+        1004
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "mid_switch",
+    "seed": 42,
+    "params": 50498,
+    "inference_ms_per_window": 0.07533115276601166,
+    "train_time_s": 73.57920984108932,
+    "best_val_macro_f1": 0.9969969248510475,
+    "loss": 0.027387438058853148,
+    "accuracy": 0.9965,
+    "macro_f1": 0.9964955835591804,
+    "worst_class_f1": 0.9963711767755313,
+    "per_class_f1": [
+      0.9966199903428296,
+      0.9963711767755313
+    ],
+    "confusion_matrix": [
+      [
+        1032,
+        7
+      ],
+      [
+        0,
+        961
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "mid_switch",
+    "seed": 73,
+    "params": 50498,
+    "inference_ms_per_window": 0.07570272600787575,
+    "train_time_s": 51.78594012395479,
+    "best_val_macro_f1": 0.998999990999919,
+    "loss": 0.012226831234991551,
+    "accuracy": 0.9985,
+    "macro_f1": 0.9984988647664796,
+    "worst_class_f1": 0.9984575835475579,
+    "per_class_f1": [
+      0.9985401459854014,
+      0.9984575835475579
+    ],
+    "confusion_matrix": [
+      [
+        1026,
+        2
+      ],
+      [
+        1,
+        971
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 76102,
+    "inference_ms_per_window": 0.0012540871011879062,
+    "train_time_s": 2.5806028097867966,
+    "best_val_macro_f1": 0.9853038494202284,
+    "loss": 0.14607594275474547,
+    "accuracy": 0.9825,
+    "macro_f1": 0.9827109565687854,
+    "worst_class_f1": 0.9630723781388478,
+    "per_class_f1": [
+      0.9941348973607038,
+      0.9920760697305864,
+      0.9839743589743589,
+      0.9630723781388478,
+      0.9910979228486647,
+      0.9719101123595506
+    ],
+    "confusion_matrix": [
+      [
+        339,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        313,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        307,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        326,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        334,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        346
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 76102,
+    "inference_ms_per_window": 0.0012519296888058307,
+    "train_time_s": 3.1511024821083993,
+    "best_val_macro_f1": 0.9813329316648307,
+    "loss": 0.09943197286128998,
+    "accuracy": 0.9835,
+    "macro_f1": 0.9833546498757357,
+    "worst_class_f1": 0.9702660406885759,
+    "per_class_f1": [
+      0.9927641099855282,
+      0.982089552238806,
+      0.9788519637462235,
+      0.9702660406885759,
+      0.9869753979739508,
+      0.9891808346213292
+    ],
+    "confusion_matrix": [
+      [
+        343,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        329,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        324,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        310,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        341,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        320
+      ]
+    ]
+  },
+  {
+    "backbone": "cnn",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 76102,
+    "inference_ms_per_window": 0.0012544802757474827,
+    "train_time_s": 5.018149012932554,
+    "best_val_macro_f1": 0.9809371560303769,
+    "loss": 0.07525425332784652,
+    "accuracy": 0.979,
+    "macro_f1": 0.978850872190117,
+    "worst_class_f1": 0.9548989113530326,
+    "per_class_f1": [
+      0.9857954545454546,
+      0.9861751152073732,
+      0.9803328290468987,
+      0.9548989113530326,
+      0.9954887218045113,
+      0.9704142011834319
+    ],
+    "confusion_matrix": [
+      [
+        347,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        321,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        324,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        307,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        331,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        328
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 220870,
+    "inference_ms_per_window": 0.0036355751944938675,
+    "train_time_s": 7.057090800954029,
+    "best_val_macro_f1": 0.9842262336283608,
+    "loss": 0.045595373541116715,
+    "accuracy": 0.982,
+    "macro_f1": 0.9819272132896549,
+    "worst_class_f1": 0.9658246656760773,
+    "per_class_f1": [
+      0.9839883551673945,
+      0.9813664596273292,
+      0.9789983844911146,
+      0.9658246656760773,
+      0.9970326409495549,
+      0.984352773826458
+    ],
+    "confusion_matrix": [
+      [
+        338,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        316,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        303,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        325,
+        0,
+        11
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        336,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        346
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 220870,
+    "inference_ms_per_window": 0.0036355300835566595,
+    "train_time_s": 5.521540084155276,
+    "best_val_macro_f1": 0.9790391960976144,
+    "loss": 0.060718630760908124,
+    "accuracy": 0.9815,
+    "macro_f1": 0.981413115516575,
+    "worst_class_f1": 0.9658385093167702,
+    "per_class_f1": [
+      0.9761570827489481,
+      0.987987987987988,
+      0.9658385093167702,
+      0.9765258215962441,
+      0.992721979621543,
+      0.989247311827957
+    ],
+    "confusion_matrix": [
+      [
+        348,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        329,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        311,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        312,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        341,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        322
+      ]
+    ]
+  },
+  {
+    "backbone": "tcn",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 220870,
+    "inference_ms_per_window": 0.003635700204540626,
+    "train_time_s": 9.35375849204138,
+    "best_val_macro_f1": 0.9894750110509296,
+    "loss": 0.03368918883800506,
+    "accuracy": 0.987,
+    "macro_f1": 0.987030880357682,
+    "worst_class_f1": 0.9771689497716894,
+    "per_class_f1": [
+      0.9844851904090268,
+      0.9908536585365854,
+      0.9771689497716894,
+      0.983358547655068,
+      0.9939759036144579,
+      0.9923430321592649
+    ],
+    "confusion_matrix": [
+      [
+        349,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        325,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        321,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        325,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        330,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        324
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 84038,
+    "inference_ms_per_window": 0.0028265291348361643,
+    "train_time_s": 9.67761736502871,
+    "best_val_macro_f1": 0.9959489877633484,
+    "loss": 0.015371999770402909,
+    "accuracy": 0.9945,
+    "macro_f1": 0.9944464691645791,
+    "worst_class_f1": 0.988835725677831,
+    "per_class_f1": [
+      0.9955686853766618,
+      0.9968454258675079,
+      0.988835725677831,
+      0.9942363112391931,
+      0.9940828402366864,
+      0.9971098265895953
+    ],
+    "confusion_matrix": [
+      [
+        337,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        316,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        310,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        345,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        336,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        345
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 84038,
+    "inference_ms_per_window": 0.00283166955341585,
+    "train_time_s": 8.404992918018252,
+    "best_val_macro_f1": 0.9920616684065662,
+    "loss": 0.026572271913290025,
+    "accuracy": 0.9885,
+    "macro_f1": 0.9884461232663396,
+    "worst_class_f1": 0.9818731117824774,
+    "per_class_f1": [
+      0.9942363112391931,
+      0.9938837920489296,
+      0.9818731117824774,
+      0.9829984544049459,
+      0.9883720930232558,
+      0.9893129770992366
+    ],
+    "confusion_matrix": [
+      [
+        345,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        325,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        325,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        318,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        340,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        324
+      ]
+    ]
+  },
+  {
+    "backbone": "transformer",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 84038,
+    "inference_ms_per_window": 0.0028353663765301462,
+    "train_time_s": 8.291220346931368,
+    "best_val_macro_f1": 0.9889543854391357,
+    "loss": 0.043274242162704465,
+    "accuracy": 0.9815,
+    "macro_f1": 0.9815471559837768,
+    "worst_class_f1": 0.9755395683453237,
+    "per_class_f1": [
+      0.9755395683453237,
+      0.9760479041916168,
+      0.975609756097561,
+      0.9831029185867896,
+      0.9865470852017937,
+      0.9924357034795764
+    ],
+    "confusion_matrix": [
+      [
+        339,
+        10,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        326,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        320,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        320,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        330,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        328
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 239766,
+    "inference_ms_per_window": 0.005774582223239122,
+    "train_time_s": 5.389822992961854,
+    "best_val_macro_f1": 0.9893832890338157,
+    "loss": 0.03999439489841461,
+    "accuracy": 0.988,
+    "macro_f1": 0.9879224696356682,
+    "worst_class_f1": 0.9793977812995246,
+    "per_class_f1": [
+      0.9926793557833089,
+      0.9904458598726115,
+      0.9793977812995246,
+      0.9842180774748924,
+      0.987987987987988,
+      0.9928057553956835
+    ],
+    "confusion_matrix": [
+      [
+        339,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        311,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        309,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        343,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        329,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        345
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 239766,
+    "inference_ms_per_window": 0.005764023217125214,
+    "train_time_s": 7.1278667049482465,
+    "best_val_macro_f1": 0.981873917520716,
+    "loss": 0.05088664290308952,
+    "accuracy": 0.9845,
+    "macro_f1": 0.9844180972931375,
+    "worst_class_f1": 0.9700598802395209,
+    "per_class_f1": [
+      0.9900426742532006,
+      0.9814241486068112,
+      0.9833080424886191,
+      0.9700598802395209,
+      0.9941348973607038,
+      0.9875389408099688
+    ],
+    "confusion_matrix": [
+      [
+        348,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        317,
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        324,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        324,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        339,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0,
+        317
+      ]
+    ]
+  },
+  {
+    "backbone": "mamba3",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 239766,
+    "inference_ms_per_window": 0.005853450420545414,
+    "train_time_s": 12.27149536809884,
+    "best_val_macro_f1": 0.9934591900799227,
+    "loss": 0.024264722257852554,
+    "accuracy": 0.992,
+    "macro_f1": 0.9920182771384366,
+    "worst_class_f1": 0.9879154078549849,
+    "per_class_f1": [
+      0.9914285714285714,
+      0.9954198473282443,
+      0.9880239520958084,
+      0.9879154078549849,
+      0.9969788519637462,
+      0.9923430321592649
+    ],
+    "confusion_matrix": [
+      [
+        347,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        326,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        330,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        327,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        330,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        324
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 26054,
+    "inference_ms_per_window": 0.024241886103482102,
+    "train_time_s": 20.17545087891631,
+    "best_val_macro_f1": 0.9733437037316229,
+    "loss": 0.1359197726249695,
+    "accuracy": 0.9765,
+    "macro_f1": 0.976453821774558,
+    "worst_class_f1": 0.9681528662420382,
+    "per_class_f1": [
+      0.9790419161676647,
+      0.9811320754716981,
+      0.9681528662420382,
+      0.9694323144104804,
+      0.9823008849557522,
+      0.9786628733997155
+    ],
+    "confusion_matrix": [
+      [
+        327,
+        6,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        312,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        304,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        333,
+        0,
+        13
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        333,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        344
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 26054,
+    "inference_ms_per_window": 0.02410167771813576,
+    "train_time_s": 17.025258341105655,
+    "best_val_macro_f1": 0.9614028336413248,
+    "loss": 0.20076426482200624,
+    "accuracy": 0.9555,
+    "macro_f1": 0.9556749087766727,
+    "worst_class_f1": 0.9162717219589257,
+    "per_class_f1": [
+      0.9927641099855282,
+      0.9720496894409938,
+      0.9194444444444444,
+      0.9538002980625931,
+      0.9162717219589257,
+      0.9797191887675507
+    ],
+    "confusion_matrix": [
+      [
+        343,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        313,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        331,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        320,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        53,
+        0,
+        290,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        0,
+        314
+      ]
+    ]
+  },
+  {
+    "backbone": "real_static",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 26054,
+    "inference_ms_per_window": 0.023938556068969774,
+    "train_time_s": 43.742880958132446,
+    "best_val_macro_f1": 0.977808380390354,
+    "loss": 0.06826332610845566,
+    "accuracy": 0.979,
+    "macro_f1": 0.9787402533455566,
+    "worst_class_f1": 0.9640062597809077,
+    "per_class_f1": [
+      0.988795518207283,
+      0.9924585218702866,
+      0.9640062597809077,
+      0.9703588143525741,
+      0.9778434268833087,
+      0.978978978978979
+    ],
+    "confusion_matrix": [
+      [
+        353,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        329,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        308,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        311,
+        0,
+        12
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        331,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        326
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 34246,
+    "inference_ms_per_window": 0.024094960781440022,
+    "train_time_s": 17.157113798893988,
+    "best_val_macro_f1": 0.971901276455181,
+    "loss": 0.09361862307786942,
+    "accuracy": 0.966,
+    "macro_f1": 0.9652387828662764,
+    "worst_class_f1": 0.9246231155778895,
+    "per_class_f1": [
+      0.9822485207100592,
+      0.9720496894409938,
+      0.9246231155778895,
+      0.9664233576642336,
+      0.9533239038189534,
+      0.9927641099855282
+    ],
+    "confusion_matrix": [
+      [
+        332,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        313,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        276,
+        0,
+        33,
+        0
+      ],
+      [
+        0,
+        15,
+        0,
+        331,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        337,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        343
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 34246,
+    "inference_ms_per_window": 0.024071859570540255,
+    "train_time_s": 37.05057879514061,
+    "best_val_macro_f1": 0.9871916842610388,
+    "loss": 0.041248222932219504,
+    "accuracy": 0.9855,
+    "macro_f1": 0.9853365504720246,
+    "worst_class_f1": 0.9682299546142209,
+    "per_class_f1": [
+      0.9942857142857143,
+      0.9863013698630136,
+      0.9878419452887538,
+      0.9682299546142209,
+      0.9941690962099126,
+      0.9811912225705329
+    ],
+    "confusion_matrix": [
+      [
+        348,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        324,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        325,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        320,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        341,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        12,
+        0,
+        313
+      ]
+    ]
+  },
+  {
+    "backbone": "real_selective",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 34246,
+    "inference_ms_per_window": 0.02389856622357911,
+    "train_time_s": 20.03363176691346,
+    "best_val_macro_f1": 0.9779662217117487,
+    "loss": 0.061775035828351976,
+    "accuracy": 0.977,
+    "macro_f1": 0.976916080992654,
+    "worst_class_f1": 0.9626307922272048,
+    "per_class_f1": [
+      0.9860335195530726,
+      0.9848484848484849,
+      0.9682299546142209,
+      0.9626307922272048,
+      0.9831546707503829,
+      0.9765990639625585
+    ],
+    "confusion_matrix": [
+      [
+        353,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        325,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        320,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        322,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        11,
+        0,
+        321,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        15,
+        0,
+        313
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 34374,
+    "inference_ms_per_window": 0.07583198648717371,
+    "train_time_s": 77.27022965997458,
+    "best_val_macro_f1": 0.953665852182567,
+    "loss": 0.12075701212882996,
+    "accuracy": 0.9555,
+    "macro_f1": 0.9550527663614702,
+    "worst_class_f1": 0.9188445667125172,
+    "per_class_f1": [
+      0.9698795180722891,
+      0.9202037351443124,
+      0.9532710280373832,
+      0.9188445667125172,
+      0.9851632047477745,
+      0.9829545454545454
+    ],
+    "confusion_matrix": [
+      [
+        322,
+        0,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        271,
+        0,
+        45,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        306,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        334,
+        0,
+        12
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        332,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        346
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 34374,
+    "inference_ms_per_window": 0.0751983421650948,
+    "train_time_s": 64.48830450698733,
+    "best_val_macro_f1": 0.9435866886468651,
+    "loss": 0.1381604223847389,
+    "accuracy": 0.9525,
+    "macro_f1": 0.9522040588458203,
+    "worst_class_f1": 0.9248895434462445,
+    "per_class_f1": [
+      0.9560283687943263,
+      0.9601226993865031,
+      0.9476923076923077,
+      0.9248895434462445,
+      0.9814020028612304,
+      0.943089430894309
+    ],
+    "confusion_matrix": [
+      [
+        337,
+        0,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        313,
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        308,
+        0,
+        13,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        314,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        343,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35,
+        0,
+        290
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_static",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 34374,
+    "inference_ms_per_window": 0.07557653279945953,
+    "train_time_s": 103.48130976688117,
+    "best_val_macro_f1": 0.9588827857309014,
+    "loss": 0.09598262441158295,
+    "accuracy": 0.962,
+    "macro_f1": 0.9615768952924539,
+    "worst_class_f1": 0.9104704097116844,
+    "per_class_f1": [
+      0.9841726618705036,
+      0.9445324881141046,
+      0.9745889387144993,
+      0.9104704097116844,
+      0.990990990990991,
+      0.9647058823529412
+    ],
+    "confusion_matrix": [
+      [
+        342,
+        0,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        298,
+        0,
+        31,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        326,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        300,
+        0,
+        24
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        330,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        328
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "speed_direction6",
+    "seed": 13,
+    "params": 50758,
+    "inference_ms_per_window": 0.07507326563427341,
+    "train_time_s": 35.07425588089973,
+    "best_val_macro_f1": 0.9828473464014,
+    "loss": 0.06796444922685624,
+    "accuracy": 0.979,
+    "macro_f1": 0.9787986074342969,
+    "worst_class_f1": 0.96987087517934,
+    "per_class_f1": [
+      0.9714285714285714,
+      0.9698890649762282,
+      0.9703588143525741,
+      0.96987087517934,
+      0.9970414201183432,
+      0.9942028985507246
+    ],
+    "confusion_matrix": [
+      [
+        323,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        306,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        311,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        338,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        337,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        343
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "speed_direction6",
+    "seed": 42,
+    "params": 50758,
+    "inference_ms_per_window": 0.07494149176636711,
+    "train_time_s": 55.93033983116038,
+    "best_val_macro_f1": 0.9808720201056197,
+    "loss": 0.05541985836625099,
+    "accuracy": 0.981,
+    "macro_f1": 0.9810476191118127,
+    "worst_class_f1": 0.9687964338781575,
+    "per_class_f1": [
+      0.9825581395348837,
+      0.9814241486068112,
+      0.9687964338781575,
+      0.9744360902255639,
+      0.986822840409956,
+      0.9922480620155039
+    ],
+    "confusion_matrix": [
+      [
+        338,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        317,
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        326,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        324,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        337,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        320
+      ]
+    ]
+  },
+  {
+    "backbone": "complex_selective",
+    "task": "speed_direction6",
+    "seed": 73,
+    "params": 50758,
+    "inference_ms_per_window": 0.07585851662952336,
+    "train_time_s": 115.63577947299927,
+    "best_val_macro_f1": 0.9884045267396829,
+    "loss": 0.0420276580452919,
+    "accuracy": 0.982,
+    "macro_f1": 0.9819093653471254,
+    "worst_class_f1": 0.9710806697108066,
+    "per_class_f1": [
+      0.9860335195530726,
+      0.982089552238806,
+      0.9710806697108066,
+      0.973561430793157,
+      0.9863013698630136,
+      0.9923896499238964
+    ],
+    "confusion_matrix": [
+      [
+        353,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        329,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        319,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        313,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        324,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        326
+      ]
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+[synth4] task=direction_hard backbone=cnn seed=13
+  -> {"backbone": "cnn", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=cnn seed=42
+  -> {"backbone": "cnn", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=cnn seed=73
+  -> {"backbone": "cnn", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=tcn seed=13
+  -> {"backbone": "tcn", "task": "direction_hard", "seed": 13, "accuracy": 0.999, "macro_f1": 0.9989992153848617, "worst_class_f1": 0.9989711934156379}
+[synth4] task=direction_hard backbone=tcn seed=42
+  -> {"backbone": "tcn", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=tcn seed=73
+  -> {"backbone": "tcn", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=transformer seed=13
+  -> {"backbone": "transformer", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=transformer seed=42
+  -> {"backbone": "transformer", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=transformer seed=73
+  -> {"backbone": "transformer", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=mamba3 seed=13
+  -> {"backbone": "mamba3", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=mamba3 seed=42
+  -> {"backbone": "mamba3", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=mamba3 seed=73
+  -> {"backbone": "mamba3", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_static seed=13
+  -> {"backbone": "real_static", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_static seed=42
+  -> {"backbone": "real_static", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_static seed=73
+  -> {"backbone": "real_static", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_selective seed=13
+  -> {"backbone": "real_selective", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_selective seed=42
+  -> {"backbone": "real_selective", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=real_selective seed=73
+  -> {"backbone": "real_selective", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_static seed=13
+  -> {"backbone": "complex_static", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_static seed=42
+  -> {"backbone": "complex_static", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_static seed=73
+  -> {"backbone": "complex_static", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_selective seed=13
+  -> {"backbone": "complex_selective", "task": "direction_hard", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_selective seed=42
+  -> {"backbone": "complex_selective", "task": "direction_hard", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=direction_hard backbone=complex_selective seed=73
+  -> {"backbone": "complex_selective", "task": "direction_hard", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=cnn seed=13
+  -> {"backbone": "cnn", "task": "mid_switch", "seed": 13, "accuracy": 0.9995, "macro_f1": 0.9994999898747949, "worst_class_f1": 0.9994977398292315}
+[synth4] task=mid_switch backbone=cnn seed=42
+  -> {"backbone": "cnn", "task": "mid_switch", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=cnn seed=73
+  -> {"backbone": "cnn", "task": "mid_switch", "seed": 73, "accuracy": 0.999, "macro_f1": 0.9989992704681714, "worst_class_f1": 0.998972250770812}
+[synth4] task=mid_switch backbone=tcn seed=13
+  -> {"backbone": "tcn", "task": "mid_switch", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=tcn seed=42
+  -> {"backbone": "tcn", "task": "mid_switch", "seed": 42, "accuracy": 0.9995, "macro_f1": 0.9994992577748367, "worst_class_f1": 0.999479979199168}
+[synth4] task=mid_switch backbone=tcn seed=73
+  -> {"backbone": "tcn", "task": "mid_switch", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=transformer seed=13
+  -> {"backbone": "transformer", "task": "mid_switch", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=transformer seed=42
+  -> {"backbone": "transformer", "task": "mid_switch", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=transformer seed=73
+  -> {"backbone": "transformer", "task": "mid_switch", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=mamba3 seed=13
+  -> {"backbone": "mamba3", "task": "mid_switch", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=mamba3 seed=42
+  -> {"backbone": "mamba3", "task": "mid_switch", "seed": 42, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=mamba3 seed=73
+  -> {"backbone": "mamba3", "task": "mid_switch", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=real_static seed=13
+  -> {"backbone": "real_static", "task": "mid_switch", "seed": 13, "accuracy": 0.9995, "macro_f1": 0.9994999938749249, "worst_class_f1": 0.9994982438534872}
+[synth4] task=mid_switch backbone=real_static seed=42
+  -> {"backbone": "real_static", "task": "mid_switch", "seed": 42, "accuracy": 0.9995, "macro_f1": 0.9994992577748367, "worst_class_f1": 0.999479979199168}
+[synth4] task=mid_switch backbone=real_static seed=73
+  -> {"backbone": "real_static", "task": "mid_switch", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=real_selective seed=13
+  -> {"backbone": "real_selective", "task": "mid_switch", "seed": 13, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=real_selective seed=42
+  -> {"backbone": "real_selective", "task": "mid_switch", "seed": 42, "accuracy": 0.9985, "macro_f1": 0.9984976559677237, "worst_class_f1": 0.9984383133784487}
+[synth4] task=mid_switch backbone=real_selective seed=73
+  -> {"backbone": "real_selective", "task": "mid_switch", "seed": 73, "accuracy": 0.9995, "macro_f1": 0.9994995935448567, "worst_class_f1": 0.9994853319608852}
+[synth4] task=mid_switch backbone=complex_static seed=13
+  -> {"backbone": "complex_static", "task": "mid_switch", "seed": 13, "accuracy": 0.999, "macro_f1": 0.998999974999375, "worst_class_f1": 0.9989949748743718}
+[synth4] task=mid_switch backbone=complex_static seed=42
+  -> {"backbone": "complex_static", "task": "mid_switch", "seed": 42, "accuracy": 0.9995, "macro_f1": 0.9994992577748367, "worst_class_f1": 0.999479979199168}
+[synth4] task=mid_switch backbone=complex_static seed=73
+  -> {"backbone": "complex_static", "task": "mid_switch", "seed": 73, "accuracy": 1.0, "macro_f1": 1.0, "worst_class_f1": 1.0}
+[synth4] task=mid_switch backbone=complex_selective seed=13
+  -> {"backbone": "complex_selective", "task": "mid_switch", "seed": 13, "accuracy": 0.9995, "macro_f1": 0.9994999898747949, "worst_class_f1": 0.9994977398292315}
+[synth4] task=mid_switch backbone=complex_selective seed=42
+  -> {"backbone": "complex_selective", "task": "mid_switch", "seed": 42, "accuracy": 0.9965, "macro_f1": 0.9964955835591804, "worst_class_f1": 0.9963711767755313}
+[synth4] task=mid_switch backbone=complex_selective seed=73
+  -> {"backbone": "complex_selective", "task": "mid_switch", "seed": 73, "accuracy": 0.9985, "macro_f1": 0.9984988647664796, "worst_class_f1": 0.9984575835475579}
+[synth4] task=speed_direction6 backbone=cnn seed=13
+  -> {"backbone": "cnn", "task": "speed_direction6", "seed": 13, "accuracy": 0.9825, "macro_f1": 0.9827109565687854, "worst_class_f1": 0.9630723781388478}
+[synth4] task=speed_direction6 backbone=cnn seed=42
+  -> {"backbone": "cnn", "task": "speed_direction6", "seed": 42, "accuracy": 0.9835, "macro_f1": 0.9833546498757357, "worst_class_f1": 0.9702660406885759}
+[synth4] task=speed_direction6 backbone=cnn seed=73
+  -> {"backbone": "cnn", "task": "speed_direction6", "seed": 73, "accuracy": 0.979, "macro_f1": 0.978850872190117, "worst_class_f1": 0.9548989113530326}
+[synth4] task=speed_direction6 backbone=tcn seed=13
+  -> {"backbone": "tcn", "task": "speed_direction6", "seed": 13, "accuracy": 0.982, "macro_f1": 0.9819272132896549, "worst_class_f1": 0.9658246656760773}
+[synth4] task=speed_direction6 backbone=tcn seed=42
+  -> {"backbone": "tcn", "task": "speed_direction6", "seed": 42, "accuracy": 0.9815, "macro_f1": 0.981413115516575, "worst_class_f1": 0.9658385093167702}
+[synth4] task=speed_direction6 backbone=tcn seed=73
+  -> {"backbone": "tcn", "task": "speed_direction6", "seed": 73, "accuracy": 0.987, "macro_f1": 0.987030880357682, "worst_class_f1": 0.9771689497716894}
+[synth4] task=speed_direction6 backbone=transformer seed=13
+  -> {"backbone": "transformer", "task": "speed_direction6", "seed": 13, "accuracy": 0.9945, "macro_f1": 0.9944464691645791, "worst_class_f1": 0.988835725677831}
+[synth4] task=speed_direction6 backbone=transformer seed=42
+  -> {"backbone": "transformer", "task": "speed_direction6", "seed": 42, "accuracy": 0.9885, "macro_f1": 0.9884461232663396, "worst_class_f1": 0.9818731117824774}
+[synth4] task=speed_direction6 backbone=transformer seed=73
+  -> {"backbone": "transformer", "task": "speed_direction6", "seed": 73, "accuracy": 0.9815, "macro_f1": 0.9815471559837768, "worst_class_f1": 0.9755395683453237}
+[synth4] task=speed_direction6 backbone=mamba3 seed=13
+  -> {"backbone": "mamba3", "task": "speed_direction6", "seed": 13, "accuracy": 0.988, "macro_f1": 0.9879224696356682, "worst_class_f1": 0.9793977812995246}
+[synth4] task=speed_direction6 backbone=mamba3 seed=42
+  -> {"backbone": "mamba3", "task": "speed_direction6", "seed": 42, "accuracy": 0.9845, "macro_f1": 0.9844180972931375, "worst_class_f1": 0.9700598802395209}
+[synth4] task=speed_direction6 backbone=mamba3 seed=73
+  -> {"backbone": "mamba3", "task": "speed_direction6", "seed": 73, "accuracy": 0.992, "macro_f1": 0.9920182771384366, "worst_class_f1": 0.9879154078549849}
+[synth4] task=speed_direction6 backbone=real_static seed=13
+  -> {"backbone": "real_static", "task": "speed_direction6", "seed": 13, "accuracy": 0.9765, "macro_f1": 0.976453821774558, "worst_class_f1": 0.9681528662420382}
+[synth4] task=speed_direction6 backbone=real_static seed=42
+  -> {"backbone": "real_static", "task": "speed_direction6", "seed": 42, "accuracy": 0.9555, "macro_f1": 0.9556749087766727, "worst_class_f1": 0.9162717219589257}
+[synth4] task=speed_direction6 backbone=real_static seed=73
+  -> {"backbone": "real_static", "task": "speed_direction6", "seed": 73, "accuracy": 0.979, "macro_f1": 0.9787402533455566, "worst_class_f1": 0.9640062597809077}
+[synth4] task=speed_direction6 backbone=real_selective seed=13
+  -> {"backbone": "real_selective", "task": "speed_direction6", "seed": 13, "accuracy": 0.966, "macro_f1": 0.9652387828662764, "worst_class_f1": 0.9246231155778895}
+[synth4] task=speed_direction6 backbone=real_selective seed=42
+  -> {"backbone": "real_selective", "task": "speed_direction6", "seed": 42, "accuracy": 0.9855, "macro_f1": 0.9853365504720246, "worst_class_f1": 0.9682299546142209}
+[synth4] task=speed_direction6 backbone=real_selective seed=73
+  -> {"backbone": "real_selective", "task": "speed_direction6", "seed": 73, "accuracy": 0.977, "macro_f1": 0.976916080992654, "worst_class_f1": 0.9626307922272048}
+[synth4] task=speed_direction6 backbone=complex_static seed=13
+  -> {"backbone": "complex_static", "task": "speed_direction6", "seed": 13, "accuracy": 0.9555, "macro_f1": 0.9550527663614702, "worst_class_f1": 0.9188445667125172}
+[synth4] task=speed_direction6 backbone=complex_static seed=42
+  -> {"backbone": "complex_static", "task": "speed_direction6", "seed": 42, "accuracy": 0.9525, "macro_f1": 0.9522040588458203, "worst_class_f1": 0.9248895434462445}
+[synth4] task=speed_direction6 backbone=complex_static seed=73
+  -> {"backbone": "complex_static", "task": "speed_direction6", "seed": 73, "accuracy": 0.962, "macro_f1": 0.9615768952924539, "worst_class_f1": 0.9104704097116844}
+[synth4] task=speed_direction6 backbone=complex_selective seed=13
+  -> {"backbone": "complex_selective", "task": "speed_direction6", "seed": 13, "accuracy": 0.979, "macro_f1": 0.9787986074342969, "worst_class_f1": 0.96987087517934}
+[synth4] task=speed_direction6 backbone=complex_selective seed=42
+  -> {"backbone": "complex_selective", "task": "speed_direction6", "seed": 42, "accuracy": 0.981, "macro_f1": 0.9810476191118127, "worst_class_f1": 0.9687964338781575}
+[synth4] task=speed_direction6 backbone=complex_selective seed=73
+  -> {"backbone": "complex_selective", "task": "speed_direction6", "seed": 73, "accuracy": 0.982, "macro_f1": 0.9819093653471254, "worst_class_f1": 0.9710806697108066}
+
+Wrote outputs_user/imu_transition/synthetic4/results_synthetic4.csv (72 rows)
