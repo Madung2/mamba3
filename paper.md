@@ -1,4 +1,4 @@
-# IMU 동작 전이 탐지를 위한 복소수 상태공간 표현 분석 및 GyroPhase Head 연구
+# Selective GyroPhase Head를 활용한 IMU 동작 전이 방향 추정 연구
 
 ## 초록
 

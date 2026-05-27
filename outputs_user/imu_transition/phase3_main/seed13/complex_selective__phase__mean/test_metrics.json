@@ -1,0 +1,97 @@
+{
+  "backbone": "complex_selective",
+  "head": "phase",
+  "pool": "mean",
+  "channels": "acc_gyro",
+  "seed": 13,
+  "split_mode": "random",
+  "task": "direction",
+  "params": 51100,
+  "inference_ms_per_window": 0.14984968751377892,
+  "train_elapsed_sec": 137.057297706604,
+  "epochs_trained": 22,
+  "accuracy": 0.9676829268292683,
+  "macro_f1": 0.6504030234085523,
+  "weighted_f1": 0.9704234446272104,
+  "non_transition_f1": 0.9909851899549259,
+  "direction_macro_f1": 0.5936393289841565,
+  "worst_direction_f1": 0.4,
+  "transition_precision": 0.7604166666666666,
+  "transition_recall": 0.9358974358974359,
+  "transition_f1": 0.8390804597701149,
+  "loss": 0.6744559974205203,
+  "per_class_f1": [
+    0.9909851899549259,
+    0.75,
+    0.8,
+    0.5945945945945946,
+    0.5,
+    0.5172413793103449,
+    0.4
+  ],
+  "confusion_matrix": [
+    [
+      1539,
+      0,
+      1,
+      6,
+      0,
+      14,
+      2
+    ],
+    [
+      2,
+      6,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      11,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      7,
+      1,
+      5
+    ],
+    [
+      2,
+      0,
+      0,
+      4,
+      0,
+      15,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      7,
+      0,
+      5
+    ]
+  ]
+}

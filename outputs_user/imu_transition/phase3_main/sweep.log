@@ -1,0 +1,464 @@
+
+=== seed=13  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9847560975609756,
+  "macro_f1": 0.7890496968871824,
+  "direction_macro_f1": 0.7543183896953066,
+  "transition_f1": 0.9493670886075949
+}
+
+=== seed=13  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.9780487804878049,
+  "macro_f1": 0.7569638044934945,
+  "direction_macro_f1": 0.7174763202097095,
+  "transition_f1": 0.8888888888888888
+}
+
+=== seed=13  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9871951219512195,
+  "macro_f1": 0.8270165973237332,
+  "direction_macro_f1": 0.7987734487734487,
+  "transition_f1": 0.9308176100628931
+}
+
+=== seed=13  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9884146341463415,
+  "macro_f1": 0.8271119705875168,
+  "direction_macro_f1": 0.7985643074562363,
+  "transition_f1": 0.9685534591194969
+}
+
+=== seed=13  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.9798780487804878,
+  "macro_f1": 0.7825504735157196,
+  "direction_macro_f1": 0.7472196325807255,
+  "transition_f1": 0.8994082840236687
+}
+
+=== seed=13  backbone=real_static  head=avgpool  pool=mean ===
+{
+  "backbone": "real_static",
+  "head": "avgpool",
+  "params": 26375,
+  "accuracy": 0.9774390243902439,
+  "macro_f1": 0.7323162993604166,
+  "direction_macro_f1": 0.6887215532018938,
+  "transition_f1": 0.8901734104046243
+}
+
+=== seed=13  backbone=real_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "avgpool",
+  "params": 34567,
+  "accuracy": 0.9853658536585366,
+  "macro_f1": 0.8133846457465946,
+  "direction_macro_f1": 0.7827633186581621,
+  "transition_f1": 0.9447852760736196
+}
+
+=== seed=13  backbone=complex_static  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_static",
+  "head": "avgpool",
+  "params": 34695,
+  "accuracy": 0.9762195121951219,
+  "macro_f1": 0.6928844260811821,
+  "direction_macro_f1": 0.6427150835045573,
+  "transition_f1": 0.8848484848484849
+}
+
+=== seed=13  backbone=complex_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "avgpool",
+  "params": 51079,
+  "accuracy": 0.9640243902439024,
+  "macro_f1": 0.6407632742520685,
+  "direction_macro_f1": 0.5829361369288774,
+  "transition_f1": 0.7934782608695652
+}
+
+=== seed=13  backbone=real_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "gyrophase_rd",
+  "params": 34679,
+  "accuracy": 0.9829268292682927,
+  "macro_f1": 0.7726982135463586,
+  "direction_macro_f1": 0.7352422070164005,
+  "transition_f1": 0.9506172839506173
+}
+
+=== seed=13  backbone=complex_selective  head=phase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "phase",
+  "params": 51100,
+  "accuracy": 0.9676829268292683,
+  "macro_f1": 0.6504030234085523,
+  "direction_macro_f1": 0.5936393289841565,
+  "transition_f1": 0.8390804597701149
+}
+
+=== seed=13  backbone=complex_selective  head=gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase",
+  "params": 51163,
+  "accuracy": 0.9585365853658536,
+  "macro_f1": 0.6414508763522455,
+  "direction_macro_f1": 0.5844533256479348,
+  "transition_f1": 0.746268656716418
+}
+
+=== seed=13  backbone=complex_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase_rd",
+  "params": 51191,
+  "accuracy": 0.9597560975609756,
+  "macro_f1": 0.5988553748609226,
+  "direction_macro_f1": 0.5343711843711844,
+  "transition_f1": 0.7684210526315789
+}
+
+=== seed=13  backbone=complex_selective  head=selective_gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase",
+  "params": 51254,
+  "accuracy": 0.9542682926829268,
+  "macro_f1": 0.5769356592856199,
+  "direction_macro_f1": 0.5090206529000629,
+  "transition_f1": 0.7575757575757576
+}
+
+=== seed=42  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9774390243902439,
+  "macro_f1": 0.7619002643208338,
+  "direction_macro_f1": 0.723127721853359,
+  "transition_f1": 0.8994082840236687
+}
+
+=== seed=42  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.9774390243902439,
+  "macro_f1": 0.7286132796064789,
+  "direction_macro_f1": 0.6842396086298526,
+  "transition_f1": 0.9058823529411765
+}
+
+=== seed=42  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9829268292682927,
+  "macro_f1": 0.8093889984948016,
+  "direction_macro_f1": 0.7784768459210921,
+  "transition_f1": 0.9036144578313253
+}
+
+=== seed=42  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9786585365853658,
+  "macro_f1": 0.7529546329112475,
+  "direction_macro_f1": 0.7126905667506692,
+  "transition_f1": 0.8982035928143712
+}
+
+=== seed=42  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.9817073170731707,
+  "macro_f1": 0.7729090979953754,
+  "direction_macro_f1": 0.735648409561453,
+  "transition_f1": 0.9316770186335404
+}
+
+=== seed=42  backbone=real_static  head=avgpool  pool=mean ===
+{
+  "backbone": "real_static",
+  "head": "avgpool",
+  "params": 26375,
+  "accuracy": 0.9804878048780488,
+  "macro_f1": 0.7545763833768231,
+  "direction_macro_f1": 0.7143671143671143,
+  "transition_f1": 0.9192546583850931
+}
+
+=== seed=42  backbone=real_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "avgpool",
+  "params": 34567,
+  "accuracy": 0.9835365853658536,
+  "macro_f1": 0.8156033098266732,
+  "direction_macro_f1": 0.7856193514088252,
+  "transition_f1": 0.9146341463414634
+}
+
+=== seed=42  backbone=complex_static  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_static",
+  "head": "avgpool",
+  "params": 34695,
+  "accuracy": 0.9689024390243902,
+  "macro_f1": 0.5892517041066537,
+  "direction_macro_f1": 0.5221347126175094,
+  "transition_f1": 0.8554913294797688
+}
+
+=== seed=42  backbone=complex_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "avgpool",
+  "params": 51079,
+  "accuracy": 0.9695121951219512,
+  "macro_f1": 0.6499448461205993,
+  "direction_macro_f1": 0.5933194271492849,
+  "transition_f1": 0.8160919540229885
+}
+
+=== seed=42  backbone=real_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "gyrophase_rd",
+  "params": 34679,
+  "accuracy": 0.9817073170731707,
+  "macro_f1": 0.7839004259618727,
+  "direction_macro_f1": 0.7485789431110096,
+  "transition_f1": 0.9202453987730062
+}
+
+=== seed=42  backbone=complex_selective  head=phase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "phase",
+  "params": 51100,
+  "accuracy": 0.975609756097561,
+  "macro_f1": 0.719808600516887,
+  "direction_macro_f1": 0.6743422208001847,
+  "transition_f1": 0.863905325443787
+}
+
+=== seed=42  backbone=complex_selective  head=gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase",
+  "params": 51163,
+  "accuracy": 0.974390243902439,
+  "macro_f1": 0.7473904294724214,
+  "direction_macro_f1": 0.7067390438591934,
+  "transition_f1": 0.847457627118644
+}
+
+=== seed=42  backbone=complex_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase_rd",
+  "params": 51191,
+  "accuracy": 0.973170731707317,
+  "macro_f1": 0.7655333943049659,
+  "direction_macro_f1": 0.728067490003118,
+  "transition_f1": 0.8314606741573034
+}
+
+=== seed=42  backbone=complex_selective  head=selective_gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase",
+  "params": 51254,
+  "accuracy": 0.9725609756097561,
+  "macro_f1": 0.7318238199796275,
+  "direction_macro_f1": 0.6886834170548717,
+  "transition_f1": 0.8323699421965318
+}
+
+=== seed=73  backbone=tcn  head=avgpool  pool=mean ===
+{
+  "backbone": "tcn",
+  "head": "avgpool",
+  "params": 222023,
+  "accuracy": 0.9859756097560975,
+  "macro_f1": 0.8027829386368317,
+  "direction_macro_f1": 0.7701804368471036,
+  "transition_f1": 0.9685534591194969
+}
+
+=== seed=73  backbone=transformer  head=avgpool  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "avgpool",
+  "params": 84359,
+  "accuracy": 0.975609756097561,
+  "macro_f1": 0.7211261979477731,
+  "direction_macro_f1": 0.6758810041393691,
+  "transition_f1": 0.8670520231213873
+}
+
+=== seed=73  backbone=mamba3  head=avgpool  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "avgpool",
+  "params": 240407,
+  "accuracy": 0.9792682926829268,
+  "macro_f1": 0.7323525535765475,
+  "direction_macro_f1": 0.6885477296812587,
+  "transition_f1": 0.9101796407185628
+}
+
+=== seed=73  backbone=mamba3  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "mamba3",
+  "head": "gyrophase_rd",
+  "params": 240498,
+  "accuracy": 0.9853658536585366,
+  "macro_f1": 0.8041649456912935,
+  "direction_macro_f1": 0.7721131885356023,
+  "transition_f1": 0.9308176100628931
+}
+
+=== seed=73  backbone=transformer  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "transformer",
+  "head": "gyrophase_rd",
+  "params": 84450,
+  "accuracy": 0.9804878048780488,
+  "macro_f1": 0.7164072509219762,
+  "direction_macro_f1": 0.66983645983646,
+  "transition_f1": 0.9192546583850931
+}
+
+=== seed=73  backbone=real_static  head=avgpool  pool=mean ===
+{
+  "backbone": "real_static",
+  "head": "avgpool",
+  "params": 26375,
+  "accuracy": 0.9804878048780488,
+  "macro_f1": 0.6987128466653293,
+  "direction_macro_f1": 0.6491385259751076,
+  "transition_f1": 0.9230769230769231
+}
+
+=== seed=73  backbone=real_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "avgpool",
+  "params": 34567,
+  "accuracy": 0.9817073170731707,
+  "macro_f1": 0.7421146638232032,
+  "direction_macro_f1": 0.6997219468483836,
+  "transition_f1": 0.9325153374233128
+}
+
+=== seed=73  backbone=complex_static  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_static",
+  "head": "avgpool",
+  "params": 34695,
+  "accuracy": 0.9621951219512195,
+  "macro_f1": 0.6393453674768709,
+  "direction_macro_f1": 0.5814484126984126,
+  "transition_f1": 0.7853403141361257
+}
+
+=== seed=73  backbone=complex_selective  head=avgpool  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "avgpool",
+  "params": 51079,
+  "accuracy": 0.9670731707317073,
+  "macro_f1": 0.6849078846823122,
+  "direction_macro_f1": 0.6343292655057361,
+  "transition_f1": 0.8021978021978022
+}
+
+=== seed=73  backbone=real_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "real_selective",
+  "head": "gyrophase_rd",
+  "params": 34679,
+  "accuracy": 0.973170731707317,
+  "macro_f1": 0.6540355851717415,
+  "direction_macro_f1": 0.597394053315106,
+  "transition_f1": 0.8901734104046243
+}
+
+=== seed=73  backbone=complex_selective  head=phase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "phase",
+  "params": 51100,
+  "accuracy": 0.973780487804878,
+  "macro_f1": 0.6641663705209774,
+  "direction_macro_f1": 0.6095317126383045,
+  "transition_f1": 0.8484848484848485
+}
+
+=== seed=73  backbone=complex_selective  head=gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase",
+  "params": 51163,
+  "accuracy": 0.947560975609756,
+  "macro_f1": 0.5924135395640978,
+  "direction_macro_f1": 0.5276271169128312,
+  "transition_f1": 0.7184466019417476
+}
+
+=== seed=73  backbone=complex_selective  head=gyrophase_rd  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "gyrophase_rd",
+  "params": 51191,
+  "accuracy": 0.9597560975609756,
+  "macro_f1": 0.6619391229685349,
+  "direction_macro_f1": 0.6084094962771434,
+  "transition_f1": 0.74
+}
+
+=== seed=73  backbone=complex_selective  head=selective_gyrophase  pool=mean ===
+{
+  "backbone": "complex_selective",
+  "head": "selective_gyrophase",
+  "params": 51254,
+  "accuracy": 0.9682926829268292,
+  "macro_f1": 0.652374802669774,
+  "direction_macro_f1": 0.5959959067802205,
+  "transition_f1": 0.8379888268156425
+}
+
+Wrote /home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/phase3_main/results_phase3.csv (42 rows)
