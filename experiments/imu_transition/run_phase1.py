@@ -28,6 +28,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--force-rebuild", action="store_true", help="Rebuild cached windows.")
     parser.add_argument("--seeds", nargs="*", type=int, default=None, help="List of seeds; overrides config seed.")
     parser.add_argument("--split-mode", default=None, choices=["random", "subject"], help="Override split mode.")
+    parser.add_argument("--task", default=None, choices=["binary", "direction"], help="Override classification task.")
+    parser.add_argument("--early-stop-metric", default=None, help="Override early-stop metric.")
     parser.add_argument("--window-size", type=int, default=None, help="Override window size.")
     parser.add_argument("--stride", type=int, default=None, help="Override stride.")
     parser.add_argument("--models", nargs="*", default=None, help="Subset of models to run.")
@@ -55,6 +57,12 @@ def main() -> None:
         config["device"] = args.device
     if args.split_mode is not None:
         config["split_mode"] = args.split_mode
+    if args.task is not None:
+        config["task"] = args.task
+        if args.early_stop_metric is None and args.task == "direction":
+            config["early_stop_metric"] = "direction_macro_f1"
+    if args.early_stop_metric is not None:
+        config["early_stop_metric"] = args.early_stop_metric
     if args.window_size is not None:
         config["window_size"] = args.window_size
     if args.stride is not None:

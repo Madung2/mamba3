@@ -19,6 +19,32 @@ ACTIVITY_LABELS = {
 
 TRANSITION_IDS = {7, 8, 9, 10, 11, 12}
 
+# 7-class direction task: 0 = non-transition (any base activity),
+# 1..6 = directed transitions in the order defined here.
+DIRECTION_MAP = {
+    7: 1,   # stand_to_sit
+    8: 2,   # sit_to_stand
+    9: 3,   # sit_to_lie
+    10: 4,  # lie_to_sit
+    11: 5,  # stand_to_lie
+    12: 6,  # lie_to_stand
+}
+DIRECTION_CLASS_NAMES = [
+    "non_transition",
+    "stand_to_sit",
+    "sit_to_stand",
+    "sit_to_lie",
+    "lie_to_sit",
+    "stand_to_lie",
+    "lie_to_stand",
+]
+NUM_DIRECTION_CLASSES = len(DIRECTION_CLASS_NAMES)
+
+
+def to_direction_label(activity_id: int) -> int:
+    """0 for any non-transition activity, otherwise 1..6 per DIRECTION_MAP."""
+    return int(DIRECTION_MAP.get(int(activity_id), 0))
+
 CHANNEL_MODES = {
     "acc": (0, 1, 2),
     "gyro": (3, 4, 5),

@@ -1,0 +1,190 @@
+{
+  "model": "transformer",
+  "channels": "acc_gyro",
+  "params": 84359,
+  "inference_ms_per_window": 0.003918311558663845,
+  "checkpoint_path": "/home/jdone/ai/mamba/mamba3/outputs_user/imu_transition/direction_5seed/seed137/transformer_acc_gyro/best.pt",
+  "split_sizes": {
+    "train": 7650,
+    "val": 1639,
+    "test": 1640
+  },
+  "best_val_metrics": {
+    "accuracy": 0.9859670530811471,
+    "macro_f1": 0.8237394965373736,
+    "weighted_f1": 0.9861434866887739,
+    "non_transition_f1": 0.9971163088753605,
+    "direction_macro_f1": 0.7948433611477089,
+    "worst_direction_f1": 0.7,
+    "transition_precision": 0.925,
+    "transition_recall": 0.961038961038961,
+    "transition_f1": 0.9426751592356688,
+    "per_class_f1": [
+      0.9971163088753605,
+      0.8695652173913043,
+      1.0,
+      0.7222222222222222,
+      0.75,
+      0.7272727272727273,
+      0.7
+    ],
+    "confusion_matrix": [
+      [
+        1556,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        13,
+        0,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        4,
+        0,
+        16,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3,
+        1,
+        7
+      ]
+    ],
+    "loss": 0.6494204799864552
+  },
+  "seed": 137,
+  "window_size": 128,
+  "stride": 64,
+  "split_mode": "random",
+  "task": "direction",
+  "num_classes": 7,
+  "accuracy": 0.9829268292682927,
+  "macro_f1": 0.753819871853712,
+  "weighted_f1": 0.983256158037304,
+  "non_transition_f1": 0.9974358974358974,
+  "direction_macro_f1": 0.7132172009233478,
+  "worst_direction_f1": 0.6086956521739131,
+  "transition_precision": 0.926829268292683,
+  "transition_recall": 0.9743589743589743,
+  "transition_f1": 0.95,
+  "loss": 1.0705627646740163,
+  "per_class_f1": [
+    0.9974358974358974,
+    0.8,
+    0.8,
+    0.6666666666666666,
+    0.6086956521739131,
+    0.7142857142857143,
+    0.6896551724137931
+  ],
+  "confusion_matrix": [
+    [
+      1556,
+      1,
+      0,
+      3,
+      0,
+      2,
+      0
+    ],
+    [
+      2,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      12,
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      7,
+      0,
+      6
+    ],
+    [
+      0,
+      1,
+      0,
+      5,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      10
+    ]
+  ],
+  "y_true_shape": 1640,
+  "y_pred_shape": 1640
+}

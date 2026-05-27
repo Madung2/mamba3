@@ -11,7 +11,7 @@ import torch
 from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset
 
-from .labels import ACTIVITY_LABELS, is_transition, resolve_channel_indices
+from .labels import ACTIVITY_LABELS, is_transition, resolve_channel_indices, to_direction_label
 
 
 class WindowDataset(Dataset):
@@ -235,6 +235,7 @@ def create_dataset_splits(
     subset_fraction: float = 1.0,
     force_rebuild: bool = False,
     split_mode: str = "random",
+    task: str = "binary",
 ) -> DatasetSplits:
     if not np.isclose(train_ratio + val_ratio + test_ratio, 1.0):
         raise ValueError("train_ratio + val_ratio + test_ratio must sum to 1.0.")
@@ -248,7 +249,17 @@ def create_dataset_splits(
     channel_indices = np.asarray(resolve_channel_indices(channel_mode), dtype=np.int64)
 
     x = arrays["x"][:, :, channel_indices]
-    y = arrays["y_binary"]
+    if task == "binary":
+        y = arrays["y_binary"]
+        num_classes = 2
+    elif task == "direction":
+        y = np.array(
+            [to_direction_label(int(a)) for a in arrays["y_activity"]],
+            dtype=np.int64,
+        )
+        num_classes = 7
+    else:
+        raise ValueError(f"Unknown task='{task}'. Use 'binary' or 'direction'.")
     activity_ids = arrays["y_activity"]
     user_ids = arrays["user_ids"]
     exp_ids = arrays["exp_ids"]
@@ -303,9 +314,11 @@ def create_dataset_splits(
     y_val = y[val_idx]
     y_test = y[test_idx]
 
-    counts = np.bincount(y_train, minlength=2).astype(np.float32)
+    counts = np.bincount(y_train, minlength=num_classes).astype(np.float32)
     counts = np.clip(counts, a_min=1.0, a_max=None)
-    class_weights = torch.tensor(y_train.shape[0] / (2.0 * counts), dtype=torch.float32)
+    class_weights = torch.tensor(
+        y_train.shape[0] / (num_classes * counts), dtype=torch.float32
+    )
 
     metadata = {
         "activity_label_map": ACTIVITY_LABELS,
@@ -329,7 +342,7 @@ def create_dataset_splits(
         test_dataset=WindowDataset(x_test, y_test),
         class_weights=class_weights,
         num_channels=x.shape[-1],
-        num_classes=2,
+        num_classes=num_classes,
         split_sizes={
             "train": int(y_train.shape[0]),
             "val": int(y_val.shape[0]),

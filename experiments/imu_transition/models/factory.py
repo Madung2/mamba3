@@ -8,6 +8,7 @@ from torch import nn
 
 from .baselines import CNN1DClassifier, GRUClassifier, TCNClassifier, TransformerEncoderClassifier
 from .mamba3_classifier import Mamba3TransitionClassifier
+from .ssm_ablation import ComplexSSMClassifier, RealSSMClassifier
 
 
 DEFAULT_MODEL_CONFIGS = {
@@ -43,6 +44,18 @@ DEFAULT_MODEL_CONFIGS = {
         "dropout": 0.1,
         "chunk_size": 16,
     },
+    "real_ssm": {
+        "d_model": 64,
+        "d_state": 64,
+        "n_layers": 2,
+        "dropout": 0.1,
+    },
+    "complex_ssm": {
+        "d_model": 64,
+        "d_state": 64,
+        "n_layers": 2,
+        "dropout": 0.1,
+    },
 }
 
 
@@ -70,6 +83,10 @@ def create_model(
         return TransformerEncoderClassifier(in_channels=in_channels, num_classes=num_classes, **cfg)
     if model_name == "mamba3":
         return Mamba3TransitionClassifier(in_channels=in_channels, num_classes=num_classes, **cfg)
+    if model_name == "real_ssm":
+        return RealSSMClassifier(in_channels=in_channels, num_classes=num_classes, **cfg)
+    if model_name == "complex_ssm":
+        return ComplexSSMClassifier(in_channels=in_channels, num_classes=num_classes, **cfg)
     if model_name == "mamba2":
         raise NotImplementedError("Mamba-2 ablation is reserved for the next experiment phase.")
     raise ValueError(f"Unknown model '{model_name}'.")

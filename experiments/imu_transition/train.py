@@ -18,7 +18,12 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from experiments.imu_transition.datasets.uci_har_pt import create_dataset_splits
-from experiments.imu_transition.metrics import benchmark_inference, compute_classification_metrics, count_parameters
+from experiments.imu_transition.metrics import (
+    benchmark_inference,
+    compute_classification_metrics,
+    compute_direction_metrics,
+    count_parameters,
+)
 from experiments.imu_transition.models.factory import create_model, resolve_model_config
 from experiments.imu_transition.utils import build_run_name, ensure_repo_on_path, load_config, resolve_repo_path, set_seed
 
@@ -62,6 +67,7 @@ def build_dataloaders(config: dict, channel_mode: str, device: torch.device) -> 
         subset_fraction=config.get("subset_fraction", 1.0),
         force_rebuild=config.get("force_rebuild", False),
         split_mode=config.get("split_mode", "random"),
+        task=config.get("task", "binary"),
     )
     loader_kwargs = {
         "batch_size": config["batch_size"],
@@ -84,6 +90,8 @@ def evaluate_model(
     loader: DataLoader,
     criterion: nn.Module,
     device: torch.device,
+    task: str = "binary",
+    num_classes: int = 2,
 ) -> tuple[dict[str, float], np.ndarray, np.ndarray]:
     model.eval()
     total_loss = 0.0
@@ -103,7 +111,10 @@ def evaluate_model(
 
     y_true = np.concatenate(all_labels)
     y_pred = np.concatenate(all_preds)
-    metrics = compute_classification_metrics(y_true, y_pred)
+    if task == "direction":
+        metrics = compute_direction_metrics(y_true, y_pred, num_classes=num_classes)
+    else:
+        metrics = compute_classification_metrics(y_true, y_pred)
     metrics["loss"] = total_loss / max(1, len(loader.dataset))
     return metrics, y_true, y_pred
 
@@ -164,7 +175,10 @@ def train_single_experiment(config: dict, model_name: str, channel_mode: str) ->
             total_examples += batch_size
 
         train_loss = total_loss / max(1, total_examples)
-        val_metrics, _, _ = evaluate_model(model, loaders["val"], criterion, device)
+        val_metrics, _, _ = evaluate_model(
+            model, loaders["val"], criterion, device,
+            task=config.get("task", "binary"), num_classes=splits.num_classes,
+        )
         record = {
             "epoch": epoch,
             "train_loss": train_loss,
@@ -200,7 +214,10 @@ def train_single_experiment(config: dict, model_name: str, channel_mode: str) ->
 
     checkpoint = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(checkpoint["state_dict"])
-    test_metrics, y_true, y_pred = evaluate_model(model, loaders["test"], criterion, device)
+    test_metrics, y_true, y_pred = evaluate_model(
+        model, loaders["test"], criterion, device,
+        task=config.get("task", "binary"), num_classes=splits.num_classes,
+    )
 
     first_batch = next(iter(loaders["test"]))[0].to(device)
     inference_ms = benchmark_inference(
@@ -222,13 +239,17 @@ def train_single_experiment(config: dict, model_name: str, channel_mode: str) ->
         "window_size": int(config["window_size"]),
         "stride": int(config["stride"]),
         "split_mode": str(config.get("split_mode", "random")),
-        **test_metrics,
+        "task": str(config.get("task", "binary")),
+        "num_classes": int(splits.num_classes),
+        **{k: v for k, v in test_metrics.items() if k not in ("per_class_f1", "confusion_matrix")},
     }
+    extras = {k: test_metrics[k] for k in ("per_class_f1", "confusion_matrix") if k in test_metrics}
 
     (run_dir / "test_metrics.json").write_text(
         json.dumps(
             {
                 **results,
+                **extras,
                 "y_true_shape": int(y_true.shape[0]),
                 "y_pred_shape": int(y_pred.shape[0]),
             },

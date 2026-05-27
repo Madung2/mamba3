@@ -1,0 +1,21 @@
+{
+  "checkpoint": "outputs_user/imu_transition/ssm_ablation_5seed/seed13/complex_ssm_gyro/best.pt",
+  "channel_mode": "gyro",
+  "task": "direction",
+  "n_test": 1640,
+  "delta_phase_mean_transition": 0.5299016676652126,
+  "delta_phase_std_transition": 0.025230382988416754,
+  "delta_phase_median_transition": 0.5313982665538788,
+  "delta_phase_mean_non_transition": 0.4243466093678328,
+  "delta_phase_std_non_transition": 0.15030131641878858,
+  "delta_phase_median_non_transition": 0.45951180160045624,
+  "delta_phase_ratio": 1.2487472645407245,
+  "phase_gyro_pearson_r": 0.8405715054476934,
+  "phase_gyro_pearson_r_class_0": 0.8513820829846572,
+  "phase_gyro_pearson_r_class_1": 0.5779474774291673,
+  "phase_gyro_pearson_r_class_2": 0.4424413307643603,
+  "phase_gyro_pearson_r_class_3": 0.1283647707363707,
+  "phase_gyro_pearson_r_class_4": 0.5460357235139264,
+  "phase_gyro_pearson_r_class_5": -0.009948412415473363,
+  "phase_gyro_pearson_r_class_6": 0.5798079886494553
+}
